@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Hello
-permalink: /notes/hello/
+permalink: /hello/
 ---
 
 # Section 1 
