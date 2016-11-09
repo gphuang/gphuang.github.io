@@ -1,12 +1,14 @@
 ---
 layout: page
-title: Hello
+title: Press
 permalink: /hello/
 ---
 
-# Section 1 
+# Research Statement 
 
-## Headers
+# CV
+
+# Publications
 
 ### Emphasis
 Emphasis - italics, *asterisks* or _underscores_ 
