@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Hello
-permalink: /hello/
+permalink: /_posts/hello/
 ---
 
 # Section 1 
