@@ -1,4 +1,5 @@
 ---
+layout: post
 title:        "Blogs to Follow"
 # jekyll-seo-tag
 description:  "Interesting Blogs to Follow"

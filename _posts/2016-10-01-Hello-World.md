@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Hello, World!"
 image:       ""
 description: "A place to practice markdown"

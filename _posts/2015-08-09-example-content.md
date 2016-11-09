@@ -1,4 +1,5 @@
 ---
+layout: post
 title:        "Example content"
 # jekyll-seo-tag
 description:  "A short description of the page's content"
