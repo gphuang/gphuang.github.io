@@ -1,10 +1,7 @@
 ---
 layout: page
-title: "Hello, World!"
-permalink: /Hello!/
-image:       ""
-description: "A place to practice markdown"
-author:       "GP Huang"
+title: "Hello!"
+permalink: /hello/
 ---
 
 # Section 1 
