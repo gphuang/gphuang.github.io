@@ -1,4 +1,5 @@
 ---
+layout:       post
 title:        "Text Data Augmentation"
 # jekyll-seo-tag
 description:  ""

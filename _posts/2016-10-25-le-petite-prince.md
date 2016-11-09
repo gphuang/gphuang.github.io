@@ -1,9 +1,6 @@
 ---
+layout:       post
 title:        "Le Petite Prince"
-# jekyll-seo-tag
-description:  "A short description of the story"
-image:        ""
-author:       "GP Huang"
 ---
 <p class="lead">Cover:</p>
 <div style="text-align:center;"><img src="/assets/little_prince_front.png"  width="50%"></div>

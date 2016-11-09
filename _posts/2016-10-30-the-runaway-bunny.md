@@ -1,9 +1,6 @@
 ---
+layout:       post
 title:        "The Runaway Bunny"
-# jekyll-seo-tag
-description:  "The Runaway Bunny"
-image:        ""
-author:       "GP Huang"
 ---
 
 [//]: # "comments"

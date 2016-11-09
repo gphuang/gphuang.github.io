@@ -1,8 +1,6 @@
 ---
+layout:       post
 title:        "Notes on Linear Algebra"
-# jekyll-seo-tag
-description:  "As title indicates"
-author:       "GP Huang"
 ---
 
 ## Matrix basics

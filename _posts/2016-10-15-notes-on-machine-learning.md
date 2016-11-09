@@ -1,8 +1,6 @@
 ---
+layout:       post
 title:        "Notes on Machine Learning with NN"
-# jekyll-seo-tag
-description:  "As title indicates"
-author:       "GP Huang"
 ---
 
 # ML Basics

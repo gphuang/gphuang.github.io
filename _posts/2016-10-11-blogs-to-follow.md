@@ -1,9 +1,6 @@
 ---
+layout:       post
 title:        "Blogs to Follow"
-# jekyll-seo-tag
-description:  "Interesting Blogs to Follow"
-image:        ""
-author:       "GP Huang"
 ---
 
 <p class="lead">Check out these bloggers, a glimpse of the Ph.D. life.</p>
