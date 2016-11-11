@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-A.I. researcher working on Machine Learning, Neural Models, and Speech Recognition. My research centered around Deep Learning, especially with Recurrent Neural Network, and its applications in speech recognition, sentence segmentation, and text data augmentation.
+Welcome to my blog. My name is GP, and I am a research scientist working on Machine Learning, Neural Models, and Speech Recognition. My research centered around Deep Learning, especially with Recurrent Neural Network, and its applications in speech recognition, sentence segmentation, and text data augmentation.
 
 On a side enjoy roaming the Earth, jogging, drawing, and trying to maintain an active Github account. Cheers.
 

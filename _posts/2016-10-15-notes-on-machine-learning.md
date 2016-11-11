@@ -6,46 +6,33 @@ title:        "Notes on Machine Learning with NN"
 # ML Basics
 The fundamental goal of machine learning is to generalize beyond the examples in the training set.
 
-Clustering is a type of unsupervised learning: input data samples have no output labels
+Clustering is a type of unsupervised learning: input data samples have no output labels.
 
-[K-Nearest Neighbor (KNN)](http://cs231n.github.io/classification/)
+One clustering method is [K-Nearest Neighbor (KNN)](http://cs231n.github.io/classification/)
 
 K-NN’s success is greatly dependent on the representation it classifies data from, so one needs a good representation before k-NN can work well.
 They are very expensive to train, but once the training is finished it is very cheap to classify a new test example. This mode of operation is much more desirable in practice.
 
-[Linear Classification]( http://cs231n.github.io/linear-classify/)
+# [Linear Classifier]( http://cs231n.github.io/linear-classify/)
+## Support Vector Machines
 
-Problem setting
+## Softmax ?
 
-```
-1x + 2y + 3 z = 12
+# Optimization: Stochastic Gradient Descent
 
-2x + 3y + 4z = 11
+# Backpropagation
 
-3x + 4y + 5z = 10
-```
+* mini-batch SGD loop:
+  - sample
+  - forward loss
+  - backward gradient
+  - update weights 
 
-Formulate with numpy
+* layer - gate
+* weight - parameters
+* forward - backward pass
 
-```python
-A*X = b
-A = np.array(np.mat(‘1 2 3; 2 3 4; 3 4 5’))
-A = np.array([[1, 2, 3], [2, 3, 4], [3, 4, 5]])
-X = np.transpose(np.array([x, y, z]))
-```
-
-Loss function
-
-```python
-def L_ivectorized(x, y, w):
-    scores = w.dot(x)
-    margins = np.maximum(0, scores - scores[y] +1)
-    margins[y] = 0
-    loss_i = np.sum(margins)
-    return loss_i
-```
- 
-# DNN
+# [Neural Classifier](http://cs231n.github.io/neural-networks-1/)
 ## Questions
 * what a neural network is really doing, behaviour of deep neural networks
 * how it is doing so, when succeeds; and what went wrong when fails.
@@ -58,20 +45,61 @@ def L_ivectorized(x, y, w):
 * A translation by the vector
 * Point-wise application of e.g., tanh.
 
-## Backpropagation
+# Case Studies
+## Problem setting 1: linear dataset
 
-* mini-batch SGD loop:
-  - sample
-  - forward loss
-  - backward gradient
-  - update weights 
+```
+1x + 2y + 3 z = 12
 
-* layer - gate
-* weight - parameters
-* forward - backward pass
+2x + 3y + 4z = 11
+
+3x + 4y + 5z = 10
+```
+
+Formulate with numpy
+
+```python
+import numpy as np
+
+A*X = b
+A = np.array(np.mat(‘1 2 3; 2 3 4; 3 4 5’))
+A = np.array([[1, 2, 3], [2, 3, 4], [3, 4, 5]])
+X = np.transpose(np.array([x, y, z]))
+# visualize the data
+TBD
+```
+
+## Problem setting 2: non-linear (spiral) dataset
+
+```python
+import numpy as np
+
+N = 100 # number of points per class/spiral wing
+D = 2  # dimensionality
+K = 5  # number of spiral wings
+X = np.zeros((N*K)) # data matrix (each row is a single training example)
+y = np.zeros(N*K, dtype='uint8') # class labels
+for j in xrange(K):
+  ix = range(N*j, N*(j+1))
+  r = np.linspace(0.0, 1, N) # radius
+  t = np.linspace(j*4, (j+1)*4, N) + np.random.randn(N)*0.2 # theta
+  X[ix] = np.c_[r*np.sin(t), r*np.cos(t)]
+  y[ix] = j
+# visualize the data
+plt.scatter(X[:,0],X[:,1], c=y, s=40, cmap=plt.cm.Spectral)
+```
+## Loss function
+
+```python
+def L_ivectorized(x, y, w):
+    scores = w.dot(x)
+    margins = np.maximum(0, scores - scores[y] +1)
+    margins[y] = 0
+    loss_i = np.sum(margins)
+    return loss_i
+```
 
 # Application to Audio: Human Speech and Language Processing
-
 
 # Application to Vision: Image and Video Processing
 
