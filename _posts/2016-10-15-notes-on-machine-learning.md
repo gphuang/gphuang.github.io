@@ -15,10 +15,21 @@ They are very expensive to train, but once the training is finished it is very c
 
 # [Linear Classifier]( http://cs231n.github.io/linear-classify/)
 
-```latex
-X = [x_0, x_1 x_2 \cdots x_n]
 
-```
+$$ \begin{align}
+X &= [1, X_1 X_2 \cdots X_n]
+  &= \begin{bmatrix}
+1 &x_1^{(1)}  &\cdots  & x_n^{(1)} \\ 
+1 &x_1^{(2)}  &\cdots  &x_n^{(2)} \\ 
+\vdots  &\vdots  &\ddots   &\vdots \\ 
+1 &x_1^{(m)}  &\cdots  &x_n^{(m)}
+\end{bmatrix} \\
+
+\theta =\begin{bmatrix} \theta_0 \\ \theta_1 \\ \vdots \\ \theta_n \\ \end{bmatrix}
+
+ \end{align} $$
+ 
+ i.e., $$ X_0 = 1 $$
 
 
 ## Support Vector Machines
