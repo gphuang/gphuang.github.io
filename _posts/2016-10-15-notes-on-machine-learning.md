@@ -8,12 +8,19 @@ The fundamental goal of machine learning is to generalize beyond the examples in
 
 Clustering is a type of unsupervised learning: input data samples have no output labels.
 
-One clustering method is [K-Nearest Neighbor (KNN)](http://cs231n.github.io/classification/)
+For example, [K-Nearest Neighbor (KNN)](http://cs231n.github.io/classification/)
 
 K-NN’s success is greatly dependent on the representation it classifies data from, so one needs a good representation before k-NN can work well.
 They are very expensive to train, but once the training is finished it is very cheap to classify a new test example. This mode of operation is much more desirable in practice.
 
 # [Linear Classifier]( http://cs231n.github.io/linear-classify/)
+
+```latex
+X = [x_0, x_1 x_2 \cdots x_n]
+
+```
+
+
 ## Support Vector Machines
 
 ## Softmax ?
