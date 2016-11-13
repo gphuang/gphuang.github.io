@@ -13,9 +13,13 @@ For example, [K-Nearest Neighbor (KNN)](http://cs231n.github.io/classification/)
 K-NN’s success is greatly dependent on the representation it classifies data from, so one needs a good representation before k-NN can work well.
 They are very expensive to train, but once the training is finished it is very cheap to classify a new test example. This mode of operation is much more desirable in practice.
 
-# [Linear Classifier]( http://cs231n.github.io/linear-classify/)
+# [Linear Classification]( http://cs231n.github.io/linear-classify/)
 
+## Support Vector Machines
 
+## Softmax ?
+
+# Linear Regression
 $$ \begin{align}
 X &= [1, X_1 X_2 \cdots X_n]
   &= \begin{bmatrix}
@@ -25,18 +29,12 @@ X &= [1, X_1 X_2 \cdots X_n]
 1 &x_1^{(m)}  &\cdots  &x_n^{(m)}
 \end{bmatrix} \\
 
-\theta =\begin{bmatrix} \theta_0 \\ \theta_1 \\ \vdots \\ \theta_n \\ \end{bmatrix}
-
- \end{align} $$
+\theta &=\begin{bmatrix} \theta_0 \\ \theta_1 \\ \vdots \\ \theta_n \\ \end{bmatrix}
+\end{align} $$
  
  i.e., $$ X_0 = 1 $$
 
-
-## Support Vector Machines
-
-## Softmax ?
-
-# Optimization: Stochastic Gradient Descent
+# Optimisation: Stochastic Gradient Descent
 
 # Backpropagation
 
