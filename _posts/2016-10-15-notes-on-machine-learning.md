@@ -3,7 +3,7 @@ layout:       post
 title:        "Notes on Machine Learning with NN"
 ---
 
-# ML Basics
+## ML Basics
 The fundamental goal of machine learning is to generalize beyond the examples in the training set.
 
 Clustering is a type of unsupervised learning: input data samples have no output labels.
@@ -13,7 +13,7 @@ For example, [K-Nearest Neighbor (KNN)](http://cs231n.github.io/classification/)
 K-NN’s success is greatly dependent on the representation it classifies data from, so one needs a good representation before k-NN can work well.
 They are very expensive to train, but once the training is finished it is very cheap to classify a new test example. This mode of operation is much more desirable in practice.
 
-# [Linear Classifier]( http://cs231n.github.io/linear-classify/)
+## [Linear Classifier]( http://cs231n.github.io/linear-classify/)
 training dataset $$ (x_{i}, y_{i}) $$. $$ i = 1 \cdots N $$
 N examples each with dimensionality D
 K distinct categories
@@ -33,11 +33,11 @@ $$
 $$
 </div>
 
-## Support Vector Machines
+### Support Vector Machines
 
-## Softmax ?
+### Softmax ?
 
-# Linear Regression
+## Linear Regression
 
 $$ \begin{align}
 X &= [1, X_1 X_2 \cdots X_n]
@@ -53,9 +53,9 @@ X &= [1, X_1 X_2 \cdots X_n]
  
  i.e., $$ X_0 = 1 $$
 
-# Optimisation: Stochastic Gradient Descent
+## Optimisation: Stochastic Gradient Descent
 
-# Backpropagation
+## Backpropagation
 
 * mini-batch SGD loop:
   - sample
@@ -67,21 +67,21 @@ X &= [1, X_1 X_2 \cdots X_n]
 * weight - parameters
 * forward - backward pass
 
-# [Neural Classifier](http://cs231n.github.io/neural-networks-1/)
-## Questions
+## [Neural Classifier](http://cs231n.github.io/neural-networks-1/)
+### Questions
 * what a neural network is really doing, behaviour of deep neural networks
 * how it is doing so, when succeeds; and what went wrong when fails.
   - explore low-dimensional deep neural networks when classifying certain datasets
   - visualise the behavior, complexity, and topology of such networks
 * On an example dataset, with each layer, the network transforms the data, creating a new representation
 
-## Continuous Visualization of Layers
+### Continuous Visualization of Layers
 * A linear transformation by the “weight” matrix
 * A translation by the vector
 * Point-wise application of e.g., tanh.
 
-# Case Studies
-## Problem setting 1: linear dataset
+## Case Studies
+### Problem setting 1: linear dataset
 
 ```
 1x + 2y + 3 z = 12
@@ -104,7 +104,7 @@ X = np.transpose(np.array([x, y, z]))
 TBD
 ```
 
-## Problem setting 2: non-linear (spiral) dataset
+### Problem setting 2: non-linear (spiral) dataset
 
 ```python
 import numpy as np
@@ -134,11 +134,11 @@ def L_ivectorized(x, y, w):
     return loss_i
 ```
 
-# Application to Audio: Human Speech and Language Processing
+## Application to Audio: Human Speech and Language Processing
 
-# Application to Vision: Image and Video Processing
+## Application to Vision: Image and Video Processing
 
-## Historical Context
+### Historical Context
 * cat & edges, how brain neurons work, 1981, 1963
 * 1966 A.I. Computer Vision
 
