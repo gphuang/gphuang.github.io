@@ -18,6 +18,11 @@ training dataset $$ (x_{i}, y_{i}) $$. $$ i = 1 \cdots N $$
 N examples each with dimensionality D
 K distinct categories
 
+
+$$
+f(x,y) = x y
+$$
+
 $$
 f(x_i, W, b) = W*x_i + b
 $$
