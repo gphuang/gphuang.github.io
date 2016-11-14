@@ -1,5 +1,6 @@
 ---
 layout:       post
+mathjax:      true
 title:        "Notes on Machine Learning with NN"
 ---
 
@@ -17,7 +18,6 @@ They are very expensive to train, but once the training is finished it is very c
 training dataset $$ (x_{i}, y_{i}) $$. $$ i = 1 \cdots N $$
 N examples each with dimensionality D
 K distinct categories
-
 
 $$
 f(x,y) = x y
