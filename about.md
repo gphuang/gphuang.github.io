@@ -9,4 +9,4 @@ Hey, I am Guangpu, a research scientist working on Machine Learning, Neural Mode
 On a side enjoy traveling, jogging, drawing, and trying to maintain an active Github account. Cheers.
 
 ### Contact me
-huang at limsi dot fr(mailto:huang@limsi.fr)
+huang at limsi dot fr
