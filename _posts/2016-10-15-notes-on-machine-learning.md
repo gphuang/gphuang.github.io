@@ -4,17 +4,29 @@ mathjax:      true
 title:        "Notes on Machine Learning with NN"
 ---
 
-## ML Basics
+## Goal: build a simple image classification pipeline, based on the k-Nearest Neighbor or the SVM/Softmax classifier.
+
+  * understand the basic Image Classification pipeline and the data-driven approach (train/predict stages)
+  * understand the train/val/test splits and the use of validation data for hyperparameter tuning.
+  * develop proficiency in writing efficient vectorized code with numpy
+  * implement and apply a k-Nearest Neighbor (kNN) classifier
+  * implement and apply a Multiclass Support Vector Machine (SVM) classifier
+  * implement and apply a Softmax classifier
+  * implement and apply a Two layer neural network classifier
+  * understand the differences and tradeoffs between these classifiers
+  * get a basic understanding of performance improvements from using higher-level representations than raw pixels (e.g. color histograms, Histogram of Gradient (HOG) features)
+
+
+### [Nearest Neighbor Classifier](http://cs231n.github.io/classification/)
+
 The fundamental goal of machine learning is to generalize beyond the examples in the training set.
 
-Clustering is a type of unsupervised learning: input data samples have no output labels.
-
-For example, [K-Nearest Neighbor (KNN)](http://cs231n.github.io/classification/)
+Clustering is a type of unsupervised learning: input data samples have no output labels. For example, K-Nearest Neighbor (KNN)
 
 K-NN’s success is greatly dependent on the representation it classifies data from, so one needs a good representation before k-NN can work well.
 They are very expensive to train, but once the training is finished it is very cheap to classify a new test example. This mode of operation is much more desirable in practice.
 
-## [Linear Classifier]( http://cs231n.github.io/linear-classify/)
+### [Linear Classifier]( http://cs231n.github.io/linear-classify/)
 training dataset $$ (x_{i}, y_{i}) $$. $$ i = 1 \cdots N $$
 N examples each with dimensionality D
 K distinct categories
@@ -24,7 +36,7 @@ f(x,y) = x y
 $$
 
 $$
-f(x_i, W, b) = W*x_i + b
+f(x_i, W) = W*x_i
 $$
 
 <div>
@@ -33,42 +45,61 @@ $$
 $$
 </div>
 
+weights, parameters
+
+Data preprocessing: mean subtraction, scale, [-1, 1]
+
+### Loss function
+
+cost function, objective function
+
 ### Support Vector Machines
 
 ### Softmax ?
 
-## Linear Regression
+### Linear Regression
 
 $$ \begin{align}
 X &= [1, X_1 X_2 \cdots X_n]
   &= \begin{bmatrix}
-1 &x_1^{(1)}  &\cdots  & x_n^{(1)} \\ 
-1 &x_1^{(2)}  &\cdots  &x_n^{(2)} \\ 
-\vdots  &\vdots  &\ddots   &\vdots \\ 
+1 &x_1^{(1)}  &\cdots  & x_n^{(1)} \\
+1 &x_1^{(2)}  &\cdots  &x_n^{(2)} \\
+\vdots  &\vdots  &\ddots   &\vdots \\
 1 &x_1^{(m)}  &\cdots  &x_n^{(m)}
 \end{bmatrix} \\
 
 \theta &=\begin{bmatrix} \theta_0 \\ \theta_1 \\ \vdots \\ \theta_n \\ \end{bmatrix}
 \end{align} $$
- 
+
  i.e., $$ X_0 = 1 $$
 
-## Optimisation: Stochastic Gradient Descent
 
-## Backpropagation
+## Goal: writing backpropagation code, and training Neural Networks and Convolutional Neural Networks.
+
+  * understand Neural Networks and how they are arranged in layered architectures
+  * understand and be able to implement (vectorized) backpropagation
+  * implement various update rules used to optimize Neural Networks
+  * implement batch normalization for training deep networks
+  * implement dropout to regularize networks
+  * effectively cross-validate and find the best hyperparameters for Neural Network architecture
+
+### Optimisation: Stochastic Gradient Descent
+
+### Backpropagation
+#### Intuition with gates
 
 * mini-batch SGD loop:
   - sample
   - forward loss
   - backward gradient
-  - update weights 
+  - update weights
 
 * layer - gate
 * weight - parameters
 * forward - backward pass
 
-## [Neural Classifier](http://cs231n.github.io/neural-networks-1/)
-### Questions
+### [Neural Classifier](http://cs231n.github.io/neural-networks-1/)
+### #Questions
 * what a neural network is really doing, behaviour of deep neural networks
 * how it is doing so, when succeeds; and what went wrong when fails.
   - explore low-dimensional deep neural networks when classifying certain datasets
@@ -79,6 +110,16 @@ X &= [1, X_1 X_2 \cdots X_n]
 * A linear transformation by the “weight” matrix
 * A translation by the vector
 * Point-wise application of e.g., tanh.
+
+## Goal: implement recurrent networks, and apply them to image captioning on Microsoft COCO.
+
+  * Understand the architecture of recurrent neural networks (RNNs) and how they operate on sequences by sharing weights over time
+  * Understand the difference between vanilla RNNs and Long-Short Term Memory (LSTM) RNNs
+  * Understand how to sample from an RNN at test-time
+  * Understand how to combine convolutional neural nets and recurrent nets to implement an image captioning system
+  * Understand how a trained convolutional network can be used to compute gradients with respect to the input image
+  * Implement and different applications of image gradients, including saliency maps, fooling images, class visualizations, feature inversion, and DeepDream.
+
 
 ## Case Studies
 ### Problem setting 1: linear dataset

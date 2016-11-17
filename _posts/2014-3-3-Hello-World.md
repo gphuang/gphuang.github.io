@@ -3,8 +3,10 @@ layout: post
 title: MD Cheatsheet
 ---
 
+[//]: # "comments"
+
 ### Emphasis
-Emphasis - italics, *asterisks* or _underscores_ 
+Emphasis - italics, *asterisks* or _underscores_
 
 Strong emphasis - bold, with **2 asterisks** ** or __2 underscores__ __
 
@@ -16,11 +18,11 @@ Strikethrough with ~~two tildes~~
 1. Emphasis - italics, with
       * *asterisks*
       *  _underscores_
-2. Strong emphasis - bold, with 
-      1. **two asterisks** ** 
+2. Strong emphasis - bold, with
+      1. **two asterisks** **
       2.  __two underscores__ __
-3. Combined emphasis with 
-      + **asterisks and 
+3. Combined emphasis with
+      + **asterisks and
       + _underscores_**
 4. Strikethrough with ~~two tildes~~
 

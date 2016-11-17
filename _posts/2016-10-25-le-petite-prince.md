@@ -11,21 +11,3 @@ title:        "Le Petite Prince"
 
 <p class="lead">Adaptation:</p>
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/Trcz-zSAHy0/0.jpg)](https://www.youtube.com/watch?v=Trcz-zSAHy0)
-
-[//]: # "comments"
-
-# Section 1
-
-## Header 1
-Sample text
-
-## Header 2
-Sample text
-
-### Header 2.1
-Sample text
-
-### Header 2.2
-Sample text
-
-# Section 2
