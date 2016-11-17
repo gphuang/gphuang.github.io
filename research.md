@@ -3,6 +3,19 @@ layout: page
 permalink: /research/
 ---
 
+I draw inspiration from the dual-process of human speech production and perception.
+
+## Goals
+  * to develop intelligent computer systems capable of understanding natural language.
+
+## Experiences
+
+2016 - present
+2015 - 2016
+2012 - 2015
+2008 - 2012
+2004 - 2008
+
 ## Publications
 
 ### RNNLM for Text Data Augmentation
