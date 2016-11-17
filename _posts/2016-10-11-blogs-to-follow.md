@@ -1,9 +1,10 @@
 ---
 layout:       post
 title:        "Blogs to Follow"
+author:       "GP Huang"
 ---
 
-<p class="lead">Check out these bloggers, a glimpse of the Ph.D. life.</p>
+<p class="lead">A glimpse of the Ph.D. life.</p>
 
 * [Google Research](https://research.googleblog.com/)
 
@@ -14,4 +15,3 @@ title:        "Blogs to Follow"
 * [Josh Meyer, University of Arizona](http://jrmeyer.github.io/)
 
 * [SimonOxfPhys, Oxford University](https://www.youtube.com/user/SimonOxfPhys/about)
-

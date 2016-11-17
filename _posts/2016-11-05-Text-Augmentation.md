@@ -1,6 +1,7 @@
 ---
 layout:       post
 title:        "Text Data Augmentation"
+author:       "GP Huang"
 ---
 
 <p class="lead">Question, could you get more data from the available text data, i.e., text data augmentation?</p>

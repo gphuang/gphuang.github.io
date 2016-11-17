@@ -2,6 +2,7 @@
 layout:       post
 mathjax:      true
 title:        "Notes on Machine Learning with NN"
+author:       "GP Huang"
 ---
 
 The fundamental goal of machine learning is to generalize beyond the examples in the training set.

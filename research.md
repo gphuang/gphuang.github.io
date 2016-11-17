@@ -3,9 +3,7 @@ layout: page
 permalink: /research/
 ---
 
-## Topics
-
-## Publications [Google Scholar Page](Google)
+## Publications
 
 ### RNNLM for Text Data Augmentation
 
@@ -35,6 +33,8 @@ The retrieved articulatory trajectories and the acoustic features are then used 
 [pdf] [BibTex] Computer Speech and Language Volume 28, pp. 163-176, 2014.
 
 ### TODO
+
+[Google Scholar Page](Google)
 
 [Project](http) [PDF](http) [Code (Github)](http)
 

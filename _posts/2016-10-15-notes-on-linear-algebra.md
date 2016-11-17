@@ -1,7 +1,10 @@
 ---
 layout:       post
 title:        "Notes on Linear Algebra"
+author:       "GP Huang"
 ---
+
+A quick review of related concepts.
 
 ## Matrix basics
 
@@ -31,7 +34,3 @@ row x column = scalar
 elimination views matrix as stacked rows or cols
 permutation views manipulate row/col vectors
 ```
-
-
-
-
