@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Research
-permalink: /hello/
+permalink: /research/
 ---
 
 ## Research Topics
