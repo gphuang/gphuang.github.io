@@ -22,7 +22,7 @@ In particular, LMs including text data generated with RNNLMs improve ASR and KWS
 
 Acoustic-to-articulatory mapping is a challenging topic in speech research.
 Due to the nature of recording conditions, the articulatory data are less abundant than the acoustic data, thus they are usually retrieved or inverted from the latter.
-The main difficulty is that there exist multiple articulatory configurations that could produce the same acoustic output , i.e., the “many to one” problem.
+The main difficulty is that there exist multiple articulatory configurations that could produce the same acoustic output, i.e., the “many to one” problem.
 
 To alleviate the “many to one” problem, I hypothesize that the muscular control signals are correlated with the articulatory trajectories and the acoustic features of human speech.
 I use the muscular control signal to constrain the number of articulatory configurations.
