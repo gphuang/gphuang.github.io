@@ -11,9 +11,13 @@ I draw inspiration from the dual-process of human speech production and percepti
 ## Experiences
 
 2016 - present
+
 2015 - 2016
+
 2012 - 2015
+
 2008 - 2012
+
 2004 - 2008
 
 ## Publications
