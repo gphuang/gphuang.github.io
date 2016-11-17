@@ -7,11 +7,11 @@ title:        "Blogs to Follow"
 
 * [Google Research](https://research.googleblog.com/)
 
-* [Christopher Olah](http://colah.github.io/)
+* [Christopher Olah, Google Brain](http://colah.github.io/)
 
-* [Andrej Karpathy from Stanford University](http://karpathy.github.io/)
+* [Andrej Karpathy, Stanford University](http://karpathy.github.io/)
 
-* [Josh Meyer from University of Arizona](http://jrmeyer.github.io/)
+* [Josh Meyer, University of Arizona](http://jrmeyer.github.io/)
 
-* [SimonOxfPhys from Oxford University](https://www.youtube.com/user/SimonOxfPhys/about)
+* [SimonOxfPhys, Oxford University](https://www.youtube.com/user/SimonOxfPhys/about)
 
