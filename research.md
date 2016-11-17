@@ -3,7 +3,7 @@ layout: page
 permalink: /research/
 ---
 
-## Research Topics
+## Topics
 
 ### RNNLM for Text Data Augmentation
 
@@ -34,4 +34,4 @@ The retrieved articulatory trajectories and the acoustic features are then used 
 
 ## Publications
 
-[Project](http)[PDF](http)[Code (Github)](http)
+[Project](http) [PDF](http) [Code (Github)](http)
