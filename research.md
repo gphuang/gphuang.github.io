@@ -12,7 +12,7 @@ Taking advantage of the continuous-space word vectors, RNN based Language Models
 Compared with n-grams, the RNN-LMs provide better vocabulary coverage and reduce data sparsity.
 This is especially useful when dealing with out-of-vocabulary (OOV) words in ASR systems.
 
-I train various RNN-LMs using word and subword units: characters and morphs, which then generate artificial text data to optimize the performance of LMs for ASR and keyword search (KWS) tasks.
+I train various RNN-LMs using word and subword units, which then generate artificial text data to optimize the performance of LMs for ASR and keyword search (KWS) tasks.
 Word-based RNNs keep the same vocabulary so do not impact the OOV, whereas subword units can reduce the OOV rate.
 In particular, LMs including text data generated with RNNLMs improve ASR and KWS results on several low-resourced languages, such as Cantonese, Mongolian, Igbo, and Amharic.
 
