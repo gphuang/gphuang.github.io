@@ -4,6 +4,8 @@ mathjax:      true
 title:        "Notes on Machine Learning with NN"
 ---
 
+The fundamental goal of machine learning is to generalize beyond the examples in the training set.
+
 ## Goal: build a simple image classification pipeline, based on the k-Nearest Neighbor or the SVM/Softmax classifier.
 
   * understand the basic Image Classification pipeline and the data-driven approach (train/predict stages)
@@ -18,8 +20,6 @@ title:        "Notes on Machine Learning with NN"
 
 
 ### [Nearest Neighbor Classifier](http://cs231n.github.io/classification/)
-
-The fundamental goal of machine learning is to generalize beyond the examples in the training set.
 
 Clustering is a type of unsupervised learning: input data samples have no output labels. For example, K-Nearest Neighbor (KNN)
 
