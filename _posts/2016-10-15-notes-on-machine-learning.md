@@ -27,6 +27,72 @@ Clustering is a type of unsupervised learning: input data samples have no output
 K-NN’s success is greatly dependent on the representation it classifies data from, so one needs a good representation before k-NN can work well.
 They are very expensive to train, but once the training is finished it is very cheap to classify a new test example. This mode of operation is much more desirable in practice.
 
+**_1 Nearest Neighbor classifier_**
+```python
+import numpy as np
+
+# input
+Xtr, Ytr, Xte, Yte = loadData('path') # magic function
+# training
+nn = NearestNeighbor() # create a Nearest Neighbor classifier class
+nn.train(Xtr, Ytr) # train the classifier on the training data and labels
+# testing
+Yte_predict = nn.predict(Xte) # predict labels on the test data
+# print the classification accuracy: average number of examples that are correctly predicted, label matches
+print 'accuracy: %f' % (np.mean(Yte_predict == Yte))
+
+# the classifier
+class NearestNeighbor(object):
+  def __init__(self):
+    pass
+
+  def train(self, X, y):
+    """ X is N x D where each row is an example. Y is N x 1 """
+    # the nearest neighbor classifier simply remembers ALL the training data
+    slef.Xtr = X
+    self.ytr = y
+
+  def predict(self, X):
+    """ X is N x D where each row is an example, which we wish to predict label for """
+    num_test = X.shape[0]
+    # make sure the output type matches the input type
+    Ypred = np.zeros(num_test, dtype = self.ytr.dtype)
+
+    # loop over all test rows
+    for i in xrange(num_test):
+      # find the nearest training image to the i'th test image
+      # using the L1 distance (sum of absolute value differences)
+      distances = np.sum(np.abs(self.Xtr - X[i,:]), axis = 1)
+      ## or using the L2 distance
+      # distance = np.sqrt(np.sum(np.square(self.Xtr - X[i,:]), axis = 1))
+      min_index = np.argmin(distances) # get the index with the smallest distance
+      Ypred[i] = self.ytr[min_index] # predict the label of the nearest example
+    return Ypred
+```
+**_K Nearest Neighbor classifier_**
+```python
+Xval = Xtr[:1000, :] # take the first 1000 for validation
+Yval = Ytr[:1000]
+Xtr = Xtr[1000:, :] # keep last 49,000 for train
+Ytr = Ytr[1000:]
+
+# find Hyperparameters that work best on the validatio set
+validation_accuracies = []
+for k in [1, 3, 5, 10, 20, 50, 100]:
+  # use a particular value of k and evaluate on validation data
+  nn = NearestNeighbor()
+  nn.train(Xtr, Ytr)
+  # assume a modified NearestNeighbor class that can take k as input
+  Yval_predict = nn.predict(Xval, k = k)
+  acc = np.mean(Yval_predict == Yval)
+  print 'accuracy: %f' % (acc,)
+
+  # keep track of what works on the validation set
+  validation_accuracies.append((k, acc)) 
+
+```
+
+
 ### [Linear Classifier]( http://cs231n.github.io/linear-classify/)
 training dataset $$ (x_{i}, y_{i}) $$. $$ i = 1 \cdots N $$
 N examples each with dimensionality D
@@ -49,6 +115,8 @@ $$
 weights, parameters
 
 Data preprocessing: mean subtraction, scale, [-1, 1]
+
+Validation sets for Hyperparameter tuning
 
 ### Loss function
 
