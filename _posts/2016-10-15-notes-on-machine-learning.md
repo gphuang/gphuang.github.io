@@ -1,14 +1,15 @@
 ---
 layout:       post
-mathjax:      true
 title:        "Notes on Machine Learning with NN"
 author:       "GP Huang"
+date:   2016-11-19 22:00:00
+mathjax: true
 ---
 
 The fundamental goal of machine learning is to generalize beyond the examples in the training set.
 
-## Goal: build a simple image classification pipeline, based on the k-Nearest Neighbor or the SVM/Softmax classifier.
-
+## Goal:
+  * build a simple image classification pipeline, based on the k-Nearest Neighbor or the SVM/Softmax classifier.
   * understand the basic Image Classification pipeline and the data-driven approach (train/predict stages)
   * understand the train/val/test splits and the use of validation data for hyperparameter tuning.
   * develop proficiency in writing efficient vectorized code with numpy
@@ -28,6 +29,7 @@ K-NN’s success is greatly dependent on the representation it classifies data f
 They are very expensive to train, but once the training is finished it is very cheap to classify a new test example. This mode of operation is much more desirable in practice.
 
 **_1 Nearest Neighbor classifier_**
+</div>
 ```python
 import numpy as np
 
@@ -40,7 +42,6 @@ nn.train(Xtr, Ytr) # train the classifier on the training data and labels
 Yte_predict = nn.predict(Xte) # predict labels on the test data
 # print the classification accuracy: average number of examples that are correctly predicted, label matches
 print 'accuracy: %f' % (np.mean(Yte_predict == Yte))
-
 # the classifier
 class NearestNeighbor(object):
   def __init__(self):
@@ -69,7 +70,10 @@ class NearestNeighbor(object):
       Ypred[i] = self.ytr[min_index] # predict the label of the nearest example
     return Ypred
 ```
+</div>
+
 **_K Nearest Neighbor classifier_**
+</div>
 ```python
 Xval = Xtr[:1000, :] # take the first 1000 for validation
 Yval = Ytr[:1000]
@@ -88,13 +92,31 @@ for k in [1, 3, 5, 10, 20, 50, 100]:
   print 'accuracy: %f' % (acc,)
 
   # keep track of what works on the validation set
-  validation_accuracies.append((k, acc)) 
-
+  validation_accuracies.append((k, acc))
 ```
+</div>
 
 
 ### [Linear Classifier]( http://cs231n.github.io/linear-classify/)
-training dataset $$ (x_{i}, y_{i}) $$. $$ i = 1 \cdots N $$
+
+**_Disadvantages_** of
+
+#### Score Function
+**_Score Function_**
+
+#### Loss Function
+
+**_Multiclass SVM_**
+**_Softmax_**
+**_Compare_**
+
+$ \sum_{\forall i}{x_i^{2}} $
+
+\\(P(y = 1 \mid x; w,b) = \sigma(w^Tx + b)\\), where \\(\sigma(z) = 1/(1+e^{-z})\\)
+
+training dataset \\(x\_i\\), y_{i})\\), where $ i = 1 \cdots N $
+
+
 N examples each with dimensionality D
 K distinct categories
 
@@ -106,11 +128,9 @@ $$
 f(x_i, W) = W*x_i
 $$
 
-<div>
 $$
 \frac{\partial f(x,y)}{\partial x} = \frac{f(x+h,y) - f(x,y)}{h}
 $$
-</div>
 
 weights, parameters
 
