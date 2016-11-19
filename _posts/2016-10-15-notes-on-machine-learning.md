@@ -106,7 +106,14 @@ for k in [1, 3, 5, 10, 20, 50, 100]:
 
 #### Loss Function
 
+**_loss function_** measures our unhappiness with outcomes, sometimes also referred to as the cost function or the objective function.
+
 **_Multiclass SVM_**
+
+$$
+L = \frac{1}{N} \sum_i \sum_{j\neq y_i} \left[ \max(0, f(x_i; W)_j - f(x_i; W)_{y_i} + \Delta) \right] + \lambda \sum_k\sum_l W_{k,l}^2
+$$
+
 **_Softmax_**
 **_Compare_**
 
