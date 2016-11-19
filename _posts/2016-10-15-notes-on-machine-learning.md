@@ -29,10 +29,9 @@ K-NN’s success is greatly dependent on the representation it classifies data f
 They are very expensive to train, but once the training is finished it is very cheap to classify a new test example. This mode of operation is much more desirable in practice.
 
 **_1 Nearest Neighbor classifier_**
-</div>
+
 ```python
 import numpy as np
-
 # input
 Xtr, Ytr, Xte, Yte = loadData('path') # magic function
 # training
@@ -70,10 +69,9 @@ class NearestNeighbor(object):
       Ypred[i] = self.ytr[min_index] # predict the label of the nearest example
     return Ypred
 ```
-</div>
 
 **_K Nearest Neighbor classifier_**
-</div>
+
 ```python
 Xval = Xtr[:1000, :] # take the first 1000 for validation
 Yval = Ytr[:1000]
@@ -94,8 +92,6 @@ for k in [1, 3, 5, 10, 20, 50, 100]:
   # keep track of what works on the validation set
   validation_accuracies.append((k, acc))
 ```
-</div>
-
 
 ### [Linear Classifier]( http://cs231n.github.io/linear-classify/)
 
@@ -146,7 +142,7 @@ def L(X, y, W):
   - W
   """
   delta =
-  score = 
+  score =
 ```
 
 **_Softmax_**
