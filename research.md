@@ -28,8 +28,8 @@ In particular, LMs including text data generated with RNNLMs improve ASR and KWS
 
 <div class="imgcap">
 <div>
-<img src="/assets/smt/SubtitleExample1_english.png" style="max-width:49%; height:400px;">
-<img src="/assets/smt/HUB5m2cExample2_english.png" style="max-width:49%; height:400px;">
+<img src="/assets/smt/SubtitleExample1_english.png" style="max-width:49%;">
+<img src="/assets/smt/HUB5m2cExample2_english.png" style="max-width:49%;">
 </div>
 <div class="thecap">Left: Moses learns to align parallel Mandarin-Cantonese subtitles and generate a phrase-table. Small corpus of TVB shows (Ref). Right: Moses translates Mandarin conversation to Cantonese. Not perfect but introduces new words, also notice the word orders.</div>
 </div>
