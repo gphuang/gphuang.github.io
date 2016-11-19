@@ -114,6 +114,40 @@ $$
 L = \frac{1}{N} \sum_i \sum_{j\neq y_i} \left[ \max(0, f(x_i; W)_j - f(x_i; W)_{y_i} + \Delta) \right] + \lambda \sum_k\sum_l W_{k,l}^2
 $$
 
+**Code** for the loss function, without regularization, in python, both unvectorized and half-vectorized form:
+
+```python
+def L_i(x, y, W:
+  """
+  unvectorized version.
+  - x
+  - y
+  - W
+  """
+  delta =
+  score =
+
+def L_i_vectorized(x, y, W):
+  """
+  half-vectorized implementation, where for a single example the implementation contains no for loops, but there is still one loop over the examples outside this function
+  """
+  delta =
+  scores =
+  margins =
+  margins[y] =
+  loss_i =
+  return loss_i
+
+def L(X, y, W):
+  """
+  fully-vectroized implementation:
+  - X
+  - y
+  - W
+  """
+
+```
+
 **_Softmax_**
 **_Compare_**
 
