@@ -145,7 +145,8 @@ def L(X, y, W):
   - y
   - W
   """
-
+  delta =
+  score = 
 ```
 
 **_Softmax_**
