@@ -28,10 +28,10 @@ In particular, LMs including text data generated with RNNLMs improve ASR and KWS
 
 <div class="imgcap">
 <div>
-<img src="/assets/smt/SubtitleExample1_english.png" style="max-width:90%;">
-<img src="/assets/smt/HUB5m2cExample2_english.png" style="max-width:90%;">
+<img src="/assets/smt/SubtitleExample1_english.png" style="max-width:90%;text-align:center;">
+<img src="/assets/smt/HUB5m2cExample2_english.png" style="max-width:90%;text-align:center;">
 </div>
-<div class="thecap">Left: Moses learns to align parallel Mandarin-Cantonese subtitles and generate a phrase-table. Small corpus of TVB shows (Ref). Right: Moses translates Mandarin conversation to Cantonese. Not perfect but introduces new words, also notice the word orders.</div>
+<div class="thecap">Upper: Moses learns to align parallel Mandarin-Cantonese subtitles and generate a phrase-table. Small corpus of TVB shows (Ref). Lower: Moses translates Mandarin conversation to Cantonese. Not perfect but introduces new words, also notice the word orders.</div>
 </div>
 
 This paper presents a method to improve a language model for a limited-resourced language using statistical machine translation from a related language to generate data for the target language. In this work, the machine translation model is trained on a corpus of parallel Mandarin-Cantonese subtitles and used to translate a large set of Mandarin conversational telephone transcripts to Cantonese, which has limited resources. The translated transcripts are used to train a more robust language model for speech recognition  and  for keyword  search  in  Cantonese  conversational  telephone  speech.This  method  enables  the  keyword  search  system  to  detect 1.5 times more out-of-vocabulary words,  and achieve 1.7% absolute improvement on actual term-weighted value.
