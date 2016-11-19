@@ -68,7 +68,7 @@ The retrieved articulatory trajectories and the acoustic features are then used 
 
 **2008 - 2012** Doctoral: Automatic Speech Recognition with Articulatory Phonetic Features (English)
 
-**2004 - 2008** Digital Signal Processing: Audio/Image/Video; Information Theory; Literature Studies
+**2004 - 2008** Bachelor: Digital Signal Processing: Audio/Image/Video; Information Theory; Literature Studies
 
 ## Teaching
 
