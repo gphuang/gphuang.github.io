@@ -8,7 +8,55 @@ mathjax: true
 
 The fundamental goal of machine learning is to generalize beyond the examples in the training set.
 
-## Goal:
+**_by Tasks_**
+  * Supervised learning
+    * Linear classifiers
+      * Linear regression with one/multiple variable
+      * Logistic Regression
+      * Support vector machines
+      * Naive Bayes classifer
+    * Support vector machines
+    * k-nearest neighbor
+    * Decision trees
+      * C4.5
+      * Random forests
+      * CART
+    * Hidden Markov models
+    * Artificial neural network
+      * Hopfield networks
+      * Boltzmann machines
+      * Restricted Boltzmann machines
+    * Random Forest
+    * Conditional Random Field
+    * ANOVA
+    * BayEsian network
+    * ...
+  * Unsupervised learning
+    * Artificial neural network
+      * self-organizing map
+    * Clustering: K-means, Fuzzy
+    * ...
+  * Deep learning
+    * deep belief networks
+    * deep Boltzmann machines
+    * deep Convolutional neural networks
+    * deep Recurrent neural networks
+  * Semi-supervised learning (...)
+  * Reinforcement learning (...)
+
+Organization may vary across subjects, this list is mainly from coursera (ML basics) and wiki (ML concepts)
+
+**_by Outputs_**
+  * Classification
+  * Regression
+  * Probability Estimation
+  * Clustering
+  * Dimensionality Reduction
+
+
+## Classification
+
+**_Goal:_**
   * build a simple image classification pipeline, based on the k-Nearest Neighbor or the SVM/Softmax classifier.
   * understand the basic Image Classification pipeline and the data-driven approach (train/predict stages)
   * understand the train/val/test splits and the use of validation data for hyperparameter tuning.
@@ -19,7 +67,6 @@ The fundamental goal of machine learning is to generalize beyond the examples in
   * implement and apply a Two layer neural network classifier
   * understand the differences and tradeoffs between these classifiers
   * get a basic understanding of performance improvements from using higher-level representations than raw pixels (e.g. color histograms, Histogram of Gradient (HOG) features)
-
 
 ### [Nearest Neighbor Classifier](http://cs231n.github.io/classification/)
 
@@ -72,13 +119,15 @@ class NearestNeighbor(object):
 
 **_K Nearest Neighbor classifier_**
 
+**Code**
+
 ```python
 Xval = Xtr[:1000, :] # take the first 1000 for validation
 Yval = Ytr[:1000]
 Xtr = Xtr[1000:, :] # keep last 49,000 for train
 Ytr = Ytr[1000:]
 
-# find Hyperparameters that work best on the validatio set
+# find Hyperparameters that work best on the validation set
 validation_accuracies = []
 for k in [1, 3, 5, 10, 20, 50, 100]:
   # use a particular value of k and evaluate on validation data
@@ -95,10 +144,14 @@ for k in [1, 3, 5, 10, 20, 50, 100]:
 
 ### [Linear Classifier]( http://cs231n.github.io/linear-classify/)
 
-**_Disadvantages_** of
+**_Disadvantages_** of k-Nearest Neighbor
+
+Three core components of the (image) classification task:
+**_Score Function_** maps the raw image pixels to class scores (e.g. a linear function)
+**_Loss function_** measures the quality of a certain set of parameters (e.g. softmax vs SVM)
+**_Optimization_** finds the set of parameters W that minimize the loss function
 
 #### Score Function
-**_Score Function_**
 
 #### Loss Function
 
@@ -176,13 +229,25 @@ Data preprocessing: mean subtraction, scale, [-1, 1]
 
 Validation sets for Hyperparameter tuning
 
-### Loss function
+### Optimization
 
-cost function, objective function
+**_gradient descent_** mini-batch GD, stochastic GD (i.e. on-line gradient descent)
 
-### Support Vector Machines
+### Backpropagation
 
-### Softmax ?
+computing the gradient analytically using the chain rule, i.e. backpropagation.
+
+Intuition with gates
+
+* mini-batch SGD loop:
+  - sample
+  - forward loss
+  - backward gradient
+  - update weights
+
+* layer - gate
+* weight - parameters
+* forward - backward pass
 
 ### Linear Regression
 
@@ -201,8 +266,10 @@ X &= [1, X_1 X_2 \cdots X_n]
  i.e., $$ X_0 = 1 $$
 
 
-## Goal: writing backpropagation code, and training Neural Networks and Convolutional Neural Networks.
+## Neural Networks
 
+**_Goal:_**
+  * write backpropagation code, and train Neural Networks and Convolutional Neural Networks.
   * understand Neural Networks and how they are arranged in layered architectures
   * understand and be able to implement (vectorized) backpropagation
   * implement various update rules used to optimize Neural Networks
@@ -210,23 +277,7 @@ X &= [1, X_1 X_2 \cdots X_n]
   * implement dropout to regularize networks
   * effectively cross-validate and find the best hyperparameters for Neural Network architecture
 
-### Optimisation: Stochastic Gradient Descent
-
-### Backpropagation
-#### Intuition with gates
-
-* mini-batch SGD loop:
-  - sample
-  - forward loss
-  - backward gradient
-  - update weights
-
-* layer - gate
-* weight - parameters
-* forward - backward pass
-
-### [Neural Classifier](http://cs231n.github.io/neural-networks-1/)
-### #Questions
+**_Questions_**
 * what a neural network is really doing, behaviour of deep neural networks
 * how it is doing so, when succeeds; and what went wrong when fails.
   - explore low-dimensional deep neural networks when classifying certain datasets
@@ -238,8 +289,10 @@ X &= [1, X_1 X_2 \cdots X_n]
 * A translation by the vector
 * Point-wise application of e.g., tanh.
 
-## Goal: implement recurrent networks, and apply them to image captioning on Microsoft COCO.
+## RNN
 
+**_Goal:_**
+  * Implement recurrent networks, and apply them to image captioning on Microsoft COCO.
   * Understand the architecture of recurrent neural networks (RNNs) and how they operate on sequences by sharing weights over time
   * Understand the difference between vanilla RNNs and Long-Short Term Memory (LSTM) RNNs
   * Understand how to sample from an RNN at test-time
@@ -301,6 +354,8 @@ def L_ivectorized(x, y, w):
     loss_i = np.sum(margins)
     return loss_i
 ```
+
+"Sigmoid Function," also called the "Logistic Function":
 
 ## Application to Audio: Human Speech and Language Processing
 
