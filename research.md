@@ -3,13 +3,16 @@ layout: page
 permalink: /research/
 ---
 
-
 ## Motivations
   * to analyze speech/sounds with respect to articulatory and auditory cues.
   * to imitate the dual-process of human speech production and perception.
   * to develop intelligent computer systems capable of understanding natural language.
 
-## Publications [(Google Scholar)](https://scholar.google.fr/citations?user=hrICCP0AAAAJ&hl=en)
+## Publications
+
+* [Academic Page](https://www.)
+
+* [Google Scholar](https://scholar.google.fr/citations?user=hrICCP0AAAAJ&hl=en)
 
 ### Text Data Augmentation for Babel Under-Resourced Languages
 
@@ -22,21 +25,21 @@ I train various RNN-LMs using word and subword units, which then generate artifi
 Word-based RNNs keep the same vocabulary so do not impact the OOV, whereas subword units can reduce the OOV rate.
 In particular, LMs including text data generated with RNNLMs improve ASR and KWS results on several low-resourced languages, such as Cantonese, Mongolian, Igbo, and Amharic.
 
-[PDF] [BibTex] ICASSP
+[PDF] [BibTex] ICASSP 2016
 
 ### Machine Translation Based Data Augmentation For Cantonese Keyword Spotting
 
 <div class="imgcap">
 <div>
-<img src="/assets/smt/SubtitleExample1_english.png" style="max-width:85%;  text-align:center;">
-<img src="/assets/smt/HUB5m2cExample2_english.png" style="max-width:95%; text-align:center;">
+<img src="/assets/smt/SubtitleExample1_english.png" style="max-width:55%;  text-align:center;">
+<img src="/assets/smt/HUB5m2cExample2_english.png" style="max-width:65%; text-align:center;">
 </div>
 <div class="thecap">Upper: Moses learns to align parallel Mandarin-Cantonese subtitles and generate a phrase-table. Small corpus of TVB shows (Ref). Lower: Moses translates Mandarin conversation to Cantonese. Not perfect but introduces new words, also notice the word orders.</div>
 </div>
 
 This paper presents a method to improve a language model for a limited-resourced language using statistical machine translation from a related language to generate data for the target language. In this work, the machine translation model is trained on a corpus of parallel Mandarin-Cantonese subtitles and used to translate a large set of Mandarin conversational telephone transcripts to Cantonese, which has limited resources. The translated transcripts are used to train a more robust language model for speech recognition  and  for keyword  search  in  Cantonese  conversational  telephone  speech.This  method  enables  the  keyword  search  system  to  detect 1.5 times more out-of-vocabulary words,  and achieve 1.7% absolute improvement on actual term-weighted value.
 
-[PDF] [BibTex] ICASSP
+[PDF] [BibTex] ICASSP 2016
 
 ### Articulatory Phonetic Features for Speech Recognition
 
