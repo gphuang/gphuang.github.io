@@ -7,17 +7,18 @@ mathjax: true
 ---
 
 The fundamental goal of machine learning is to generalize beyond the examples in the training set.
+Some basic concepts: 
 
-**_Types of Learning by Tasks_**
+**_ML by Tasks_**
 
 * Supervised learning
+  * Nearest neighbor
   * Linear classifiers
     * Linear regression with one/multiple variable
     * Logistic Regression
     * Support vector machines
     * Naive Bayes classifer
   * Support vector machines
-  * k-nearest neighbor
   * Decision trees
     * C4.5
     * Random forests
@@ -35,7 +36,9 @@ The fundamental goal of machine learning is to generalize beyond the examples in
 * Unsupervised learning
   * Artificial neural network
     * self-organizing map
-  * Clustering: K-means, Fuzzy
+  * Clustering
+    * K-means clustering
+    * Fuzzy clustering
   * ...
 * Deep learning
   * deep belief networks
@@ -47,7 +50,7 @@ The fundamental goal of machine learning is to generalize beyond the examples in
 
 Organization may vary across subjects, this list is mainly from coursera (ML basics) and wiki (ML concepts)
 
-**_Types of Learning by Outputs_**
+**_ML by Outputs_**
 
 * Classification
 * Regression
@@ -56,9 +59,10 @@ Organization may vary across subjects, this list is mainly from coursera (ML bas
 * Dimensionality Reduction
 
 **_Key Elements of ML Algorithm_**
-  * Representation: how to represent knowledge. Examples include decision trees, sets of rules, instances, graphical models, neural networks, support vector machines, model ensembles and others.
-  * Evaluation: the way to evaluate candidate programs (hypotheses). Examples include accuracy, prediction and recall, squared error, likelihood, posterior probability, cost, margin, entropy k-L divergence and others.
-  * Optimization: the way candidate programs are generated known as the search process. For example combinatorial optimization, convex optimization, constrained optimization.
+
+* Representation: how to represent knowledge. Examples include decision trees, sets of rules, instances, graphical models, neural networks, support vector machines, model ensembles and others.
+* Evaluation: the way to evaluate candidate programs (hypotheses). Examples include accuracy, prediction and recall, squared error, likelihood, posterior probability, cost, margin, entropy k-L divergence and others.
+* Optimization: the way candidate programs are generated known as the search process. For example combinatorial optimization, convex optimization, constrained optimization.
 
 ## Classification
 
@@ -295,7 +299,7 @@ X &= [1, X_1 X_2 \cdots X_n]
 * A translation by the vector
 * Point-wise application of e.g., tanh.
 
-## RNN
+## Recurrent Neural Networks
 
 **_Goal:_**
   * Implement recurrent networks, and apply them to image captioning on Microsoft COCO.
