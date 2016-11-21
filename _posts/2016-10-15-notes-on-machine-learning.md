@@ -7,7 +7,7 @@ mathjax: true
 ---
 
 The fundamental goal of machine learning is to generalize beyond the examples in the training set.
-Some basic concepts: 
+Some basic concepts:
 
 **_ML by Tasks_**
 
@@ -67,16 +67,17 @@ Organization may vary across subjects, this list is mainly from coursera (ML bas
 ## Classification
 
 **_Goal:_**
-  * build a simple image classification pipeline, based on the k-Nearest Neighbor or the SVM/Softmax classifier.
-  * understand the basic Image Classification pipeline and the data-driven approach (train/predict stages)
-  * understand the train/val/test splits and the use of validation data for hyperparameter tuning.
-  * develop proficiency in writing efficient vectorized code with numpy
-  * implement and apply a k-Nearest Neighbor (kNN) classifier
-  * implement and apply a Multiclass Support Vector Machine (SVM) classifier
-  * implement and apply a Softmax classifier
-  * implement and apply a Two layer neural network classifier
-  * understand the differences and tradeoffs between these classifiers
-  * get a basic understanding of performance improvements from using higher-level representations than raw pixels (e.g. color histograms, Histogram of Gradient (HOG) features)
+
+* build a simple image classification pipeline, based on the k-Nearest Neighbor or the SVM/Softmax classifier.
+* understand the basic Image Classification pipeline and the data-driven approach (train/predict stages)
+* understand the train/val/test splits and the use of validation data for hyperparameter tuning.
+* develop proficiency in writing efficient vectorized code with numpy
+* implement and apply a k-Nearest Neighbor (kNN) classifier
+* implement and apply a Multiclass Support Vector Machine (SVM) classifier
+* implement and apply a Softmax classifier
+* implement and apply a Two layer neural network classifier
+* understand the differences and tradeoffs between these classifiers
+* get a basic understanding of performance improvements from using higher-level representations than raw pixels (e.g. color histograms, Histogram of Gradient (HOG) features)
 
 ### [Nearest Neighbor Classifier](http://cs231n.github.io/classification/)
 
@@ -163,6 +164,8 @@ Three core components of the (image) classification task:
 
 #### Score Function
 
+$$ f(x_i, W, b) = W*x_i + b $$
+
 #### Loss Function
 
 **_loss function_** measures our unhappiness with outcomes, sometimes also referred to as the cost function or the objective function.
@@ -239,6 +242,30 @@ Data preprocessing: mean subtraction, scale, [-1, 1]
 
 Validation sets for Hyperparameter tuning
 
+#### Linear Regression with One/Multiple Variables
+
+Linear regression predicts a real-valued output based on an input value.
+
+cost function
+
+gradient descent for learning.
+
+$$ \begin{align}
+X &= [1, X_1 X_2 \cdots X_n]
+  &= \begin{bmatrix}
+1 &x_1^{(1)}  &\cdots  & x_n^{(1)} \\
+1 &x_1^{(2)}  &\cdots  &x_n^{(2)} \\
+\vdots  &\vdots  &\ddots   &\vdots \\
+1 &x_1^{(m)}  &\cdots  &x_n^{(m)}
+\end{bmatrix} \\
+
+\theta &=\begin{bmatrix} \theta_0 \\ \theta_1 \\ \vdots \\ \theta_n \\ \end{bmatrix}
+\end{align} $$
+
+ i.e., $$ X_0 = 1 $$
+
+#### Logistic Regression
+
 ### Optimization
 
 **_gradient descent_** mini-batch GD, stochastic GD (i.e. on-line gradient descent)
@@ -259,35 +286,20 @@ Intuition with gates
 * weight - parameters
 * forward - backward pass
 
-### Linear Regression
-
-$$ \begin{align}
-X &= [1, X_1 X_2 \cdots X_n]
-  &= \begin{bmatrix}
-1 &x_1^{(1)}  &\cdots  & x_n^{(1)} \\
-1 &x_1^{(2)}  &\cdots  &x_n^{(2)} \\
-\vdots  &\vdots  &\ddots   &\vdots \\
-1 &x_1^{(m)}  &\cdots  &x_n^{(m)}
-\end{bmatrix} \\
-
-\theta &=\begin{bmatrix} \theta_0 \\ \theta_1 \\ \vdots \\ \theta_n \\ \end{bmatrix}
-\end{align} $$
-
- i.e., $$ X_0 = 1 $$
-
-
-## Neural Networks
+## Non-linear Classification with Neural Networks
 
 **_Goal:_**
-  * write backpropagation code, and train Neural Networks and Convolutional Neural Networks.
-  * understand Neural Networks and how they are arranged in layered architectures
-  * understand and be able to implement (vectorized) backpropagation
-  * implement various update rules used to optimize Neural Networks
-  * implement batch normalization for training deep networks
-  * implement dropout to regularize networks
-  * effectively cross-validate and find the best hyperparameters for Neural Network architecture
+
+* write backpropagation code, and train Neural Networks and Convolutional Neural Networks.
+* understand Neural Networks and how they are arranged in layered architectures
+* understand and be able to implement (vectorized) backpropagation
+* implement various update rules used to optimize Neural Networks
+* implement batch normalization for training deep networks
+* implement dropout to regularize networks
+* effectively cross-validate and find the best hyperparameters for Neural Network architecture
 
 **_Questions_**
+
 * what a neural network is really doing, behaviour of deep neural networks
 * how it is doing so, when succeeds; and what went wrong when fails.
   - explore low-dimensional deep neural networks when classifying certain datasets
