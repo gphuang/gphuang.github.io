@@ -8,51 +8,57 @@ mathjax: true
 
 The fundamental goal of machine learning is to generalize beyond the examples in the training set.
 
-**_by Tasks_**
-  * Supervised learning
-    * Linear classifiers
-      * Linear regression with one/multiple variable
-      * Logistic Regression
-      * Support vector machines
-      * Naive Bayes classifer
+**_Types of Learning by Tasks_**
+
+* Supervised learning
+  * Linear classifiers
+    * Linear regression with one/multiple variable
+    * Logistic Regression
     * Support vector machines
-    * k-nearest neighbor
-    * Decision trees
-      * C4.5
-      * Random forests
-      * CART
-    * Hidden Markov models
-    * Artificial neural network
-      * Hopfield networks
-      * Boltzmann machines
-      * Restricted Boltzmann machines
-    * Random Forest
-    * Conditional Random Field
-    * ANOVA
-    * BayEsian network
-    * ...
-  * Unsupervised learning
-    * Artificial neural network
-      * self-organizing map
-    * Clustering: K-means, Fuzzy
-    * ...
-  * Deep learning
-    * deep belief networks
-    * deep Boltzmann machines
-    * deep Convolutional neural networks
-    * deep Recurrent neural networks
-  * Semi-supervised learning (...)
-  * Reinforcement learning (...)
+    * Naive Bayes classifer
+  * Support vector machines
+  * k-nearest neighbor
+  * Decision trees
+    * C4.5
+    * Random forests
+    * CART
+  * Hidden Markov models
+  * Artificial neural network
+    * Hopfield networks
+    * Boltzmann machines
+    * Restricted Boltzmann machines
+  * Random Forest
+  * Conditional Random Field
+  * ANOVA
+  * BayEsian network
+  * ...
+* Unsupervised learning
+  * Artificial neural network
+    * self-organizing map
+  * Clustering: K-means, Fuzzy
+  * ...
+* Deep learning
+  * deep belief networks
+  * deep Boltzmann machines
+  * deep Convolutional neural networks
+  * deep Recurrent neural networks
+* Semi-supervised learning (...)
+* Reinforcement learning (...)
 
 Organization may vary across subjects, this list is mainly from coursera (ML basics) and wiki (ML concepts)
 
-**_by Outputs_**
-  * Classification
-  * Regression
-  * Probability Estimation
-  * Clustering
-  * Dimensionality Reduction
+**_Types of Learning by Outputs_**
 
+* Classification
+* Regression
+* Probability Estimation
+* Clustering
+* Dimensionality Reduction
+
+**_Key Elements of ML Algorithm_**
+  * Representation: how to represent knowledge. Examples include decision trees, sets of rules, instances, graphical models, neural networks, support vector machines, model ensembles and others.
+  * Evaluation: the way to evaluate candidate programs (hypotheses). Examples include accuracy, prediction and recall, squared error, likelihood, posterior probability, cost, margin, entropy k-L divergence and others.
+  * Optimization: the way candidate programs are generated known as the search process. For example combinatorial optimization, convex optimization, constrained optimization.
 
 ## Classification
 
