@@ -7,56 +7,6 @@ mathjax: true
 ---
 
 The fundamental goal of machine learning is to generalize beyond the examples in the training set.
-Some basic concepts:
-
-**_ML by Tasks_**
-
-* Supervised learning
-  * Nearest neighbor
-  * Linear classifiers
-    * Linear regression with one/multiple variable
-    * Logistic Regression
-    * Support vector machines
-    * Naive Bayes classifer
-  * Support vector machines
-  * Decision trees
-    * C4.5
-    * Random forests
-    * CART
-  * Hidden Markov models
-  * Artificial neural network
-    * Hopfield networks
-    * Boltzmann machines
-    * Restricted Boltzmann machines
-  * Random Forest
-  * Conditional Random Field
-  * ANOVA
-  * BayEsian network
-  * ...
-* Unsupervised learning
-  * Artificial neural network
-    * self-organizing map
-  * Clustering
-    * K-means clustering
-    * Fuzzy clustering
-  * ...
-* Deep learning
-  * deep belief networks
-  * deep Boltzmann machines
-  * deep Convolutional neural networks
-  * deep Recurrent neural networks
-* Semi-supervised learning (...)
-* Reinforcement learning (...)
-
-Organization may vary across subjects, this list is mainly from coursera (ML basics) and wiki (ML concepts)
-
-**_ML by Outputs_**
-
-* Classification
-* Regression
-* Probability Estimation
-* Clustering
-* Dimensionality Reduction
 
 **_Key Elements of ML Algorithm_**
 
@@ -387,6 +337,56 @@ def L_ivectorized(x, y, w):
 * cat & edges, how brain neurons work, 1981, 1963
 * 1966 A.I. Computer Vision
 
+<p class="lead">Some Basic Concepts</p>
+
+**_ML by Tasks_**
+
+* Supervised learning
+  * Nearest neighbor
+  * Linear classifiers
+    * Linear regression with one/multiple variable
+    * Logistic Regression
+    * Support vector machines
+    * Naive Bayes classifer
+  * Support vector machines
+  * Decision trees
+    * C4.5
+    * Random forests
+    * CART
+  * Hidden Markov models
+  * Artificial neural network
+    * Hopfield networks
+    * Boltzmann machines
+    * Restricted Boltzmann machines
+  * Random Forest
+  * Conditional Random Field
+  * ANOVA
+  * BayEsian network
+  * ...
+* Unsupervised learning
+  * Artificial neural network
+    * self-organizing map
+  * Clustering
+    * K-means clustering
+    * Fuzzy clustering
+  * ...
+* Deep learning
+  * deep belief networks
+  * deep Boltzmann machines
+  * deep Convolutional neural networks
+  * deep Recurrent neural networks
+* Semi-supervised learning (...)
+* Reinforcement learning (...)
+
+Organization may vary across subjects, this list is mainly from coursera (ML basics) and wiki (ML concepts)
+
+**_ML by Outputs_**
+
+* Classification
+* Regression
+* Probability Estimation
+* Clustering
+* Dimensionality Reduction
 
 <p class="lead">Further Reading</p>
 
