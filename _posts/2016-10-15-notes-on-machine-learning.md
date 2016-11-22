@@ -29,7 +29,7 @@ The fundamental goal of machine learning is to generalize beyond the examples in
 * understand the differences and tradeoffs between these classifiers
 * get a basic understanding of performance improvements from using higher-level representations than raw pixels (e.g. color histograms, Histogram of Gradient (HOG) features)
 
-### [Nearest Neighbor Classifier](http://cs231n.github.io/classification/)
+### Nearest Neighbor Classifier
 
 Clustering is a type of unsupervised learning: input data samples have no output labels. For example, K-Nearest Neighbor (KNN)
 
@@ -80,8 +80,6 @@ class NearestNeighbor(object):
 
 **_K Nearest Neighbor classifier_**
 
-**Code**
-
 ```python
 Xval = Xtr[:1000, :] # take the first 1000 for validation
 Yval = Ytr[:1000]
@@ -103,7 +101,7 @@ for k in [1, 3, 5, 10, 20, 50, 100]:
   validation_accuracies.append((k, acc))
 ```
 
-### [Linear Classifier]( http://cs231n.github.io/linear-classify/)
+### Linear Classifier
 
 **_Disadvantages_** of k-Nearest Neighbor
 
