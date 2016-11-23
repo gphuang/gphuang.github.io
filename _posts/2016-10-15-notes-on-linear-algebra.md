@@ -1,5 +1,5 @@
 ---
-layout:       page
+layout:       post
 title:        "Notes on Linear Algebra"
 author:       "GP Huang"
 ---
