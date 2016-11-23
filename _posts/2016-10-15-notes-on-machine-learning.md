@@ -6,6 +6,22 @@ date:   2016-11-19 22:00:00
 mathjax: true
 ---
 
+Table of Contents:
+
+- [Classification](#Classification)
+  - [Nearest Neighbor Classifier](#NearestNeighborClassifier)
+  - [Linear Classifier](#LinearClassifier)
+  - [Non-linear Classification with Neural Networks](#NonLinearClassifier)
+    - [Architecture](#Architecture)
+    - [Data and Loss Function](#DataandLossFunction)
+    - [Learning and Evaluation](#LearningandEvaluation)
+    - [Case Study](#CaseStudy)
+  - [Convolutional Neural Networks](#CNN)
+  - [Recurrent Neural Networks](#RNN)
+ - [Application to Audio: Human Speech and Language Processing](#AppHSLP)
+ - [Application to Vision: Image and Video Processing](#APPVIVP)
+ - [Summary](#summary)
+
 The fundamental goal of machine learning is to generalize beyond the examples in the training set.
 
 **_Key Elements of ML Algorithm_**
@@ -13,6 +29,8 @@ The fundamental goal of machine learning is to generalize beyond the examples in
 * Representation: how to represent knowledge. Examples include decision trees, sets of rules, instances, graphical models, neural networks, support vector machines, model ensembles and others.
 * Evaluation: the way to evaluate candidate programs (hypotheses). Examples include accuracy, prediction and recall, squared error, likelihood, posterior probability, cost, margin, entropy k-L divergence and others.
 * Optimization: the way candidate programs are generated known as the search process. For example combinatorial optimization, convex optimization, constrained optimization.
+
+<a name ='Classification'></a>
 
 ## Classification
 
@@ -28,6 +46,8 @@ The fundamental goal of machine learning is to generalize beyond the examples in
 * implement and apply a Two layer neural network classifier
 * understand the differences and tradeoffs between these classifiers
 * get a basic understanding of performance improvements from using higher-level representations than raw pixels (e.g. color histograms, Histogram of Gradient (HOG) features)
+
+<a name ='NearestNeighborClassifier'></a>
 
 ### Nearest Neighbor Classifier
 
@@ -100,6 +120,7 @@ for k in [1, 3, 5, 10, 20, 50, 100]:
   # keep track of what works on the validation set
   validation_accuracies.append((k, acc))
 ```
+<a name='LinearClassifier'></a>
 
 ### Linear Classifier
 
@@ -162,6 +183,7 @@ def L(X, y, W):
 ```
 
 **_Softmax_**
+
 **_Compare_**
 
 $ \sum_{\forall i}{x_i^{2}} $
@@ -216,6 +238,7 @@ X &= [1, X_1 X_2 \cdots X_n]
 
 #### Logistic Regression
 
+<a name='NonLinearClassifier'></a>
 
 ## Non-linear Classification with Neural Networks
 
@@ -237,6 +260,8 @@ X &= [1, X_1 X_2 \cdots X_n]
   - visualise the behavior, complexity, and topology of such networks
 * On an example dataset, with each layer, the network transforms the data, creating a new representation
 
+<a name='Architecture'></a>
+
 ### Architecture
 
 #### Biological motivation
@@ -255,12 +280,17 @@ class Neuron(object):
     firing_rate = sigmoid(cell_synapse)
     return firing_rate
 ```
+<a name='DataandLossFunction'></a>
 
 ### Data and Loss Function
 
+<a name='LearningandEvaluation'></a>
+
 ### Learning and Evaluation
 
-### Case study
+<a name='CaseStudy'></a>
+
+### Case Study
 
 #### Problem setting 1: linear dataset
 
@@ -304,7 +334,7 @@ for j in xrange(K):
 # visualize the data
 plt.scatter(X[:,0],X[:,1], c=y, s=40, cmap=plt.cm.Spectral)
 ```
-## Loss function
+Loss function
 
 ```python
 def L_ivectorized(x, y, w):
@@ -317,9 +347,12 @@ def L_ivectorized(x, y, w):
 
 "Sigmoid Function," also called the "Logistic Function":
 
-## Convolutional Neural Networks
+<a name='CNN'></a>
 
-## Recurrent Neural Networks
+### Convolutional Neural Networks
+
+<a name='RNN'></a>
+### Recurrent Neural Networks
 
 **_Goal:_**
   * Implement recurrent networks, and apply them to image captioning on Microsoft COCO.
@@ -330,10 +363,12 @@ def L_ivectorized(x, y, w):
   * Understand how a trained convolutional network can be used to compute gradients with respect to the input image
   * Implement and different applications of image gradients, including saliency maps, fooling images, class visualizations, feature inversion, and DeepDream.
 
-### Continuous Visualization of Layers
+#### Continuous Visualization of Layers
   * A linear transformation by the “weight” matrix
   * A translation by the vector
   * Point-wise application of e.g., tanh.
+
+<a name='AppHSLP'></a>
 
 ## Application to Audio: Human Speech and Language Processing
 
@@ -347,10 +382,16 @@ Given x, where x, and we want to compute/debug x.
 
 **_Expressions and interpretation of the problem_**
 
+<a name='AppVIVP'></a>
 
 ## Application to Vision: Image and Video Processing
 
-### Historical Context
+<a name='summary'></a>
+
+## Summary
+
+Historical Context
+
 * cat & edges, how brain neurons work, 1981, 1963
 * 1966 A.I. Computer Vision
 
