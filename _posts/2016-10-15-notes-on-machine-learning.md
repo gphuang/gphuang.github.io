@@ -11,6 +11,9 @@ Table of Contents:
 - [Classification](#Classification)
   - [Nearest Neighbor Classifier](#NearestNeighborClassifier)
   - [Linear Classifier](#LinearClassifier)
+    - [Score Function](#ScoreFunction)
+    - [Loss Function](#LossFunction)
+    - [Optimization](#Optimization)
   - [Non-linear Classifier with Neural Networks](#NonLinearClassifier)
     - [Architecture](#Architecture)
     - [Data and Loss Function](#DataandLossFunction)
@@ -120,22 +123,34 @@ for k in [1, 3, 5, 10, 20, 50, 100]:
   # keep track of what works on the validation set
   validation_accuracies.append((k, acc))
 ```
+
+**_Disadvantages_** of k-Nearest Neighbor
+
 <a name='LinearClassifier'></a>
 
 ### Linear Classifier
-
-**_Disadvantages_** of k-Nearest Neighbor
 
 Three core components of the (image) classification task:
 **_Score Function_** maps the raw image pixels to class scores (e.g. a linear function)
 **_Loss function_** measures the quality of a certain set of parameters (e.g. softmax vs SVM)
 **_Optimization_** finds the set of parameters W that minimize the loss function
 
+3 key components in (image) classification task:
+
+* 1. A (parameterized) score function maps the raw image pixels to class scores (e.g., a linear function $$f(x_i,W) = Wx_i$$)
+* 2. A loss function **L** measures the quality of a particulary set of parameters using certain scores (e.g., Softmax/SVM)
+* 3. An optimization function finds the set of parameters **W** that minimize the loss function
+
+
+<a name='ScoreFunction'></a>
+
 #### Score Function
 
 $$ f(x_i, W, b) = W*x_i + b $$
 
 binary Softmax classifier (also known as logistic regression)
+
+<a name='LossFunction'></a>
 
 #### Loss Function
 
@@ -213,6 +228,81 @@ weights, parameters
 Data preprocessing: mean subtraction, scale, [-1, 1]
 
 Validation sets for Hyperparameter tuning
+
+
+<a name='Optimization'></a>
+
+#### Optimization
+
+**_Strategy 1: Random search:_** try out many different random weights and keep track of what works best.
+
+```python
+# X_train is the data where each column is an example (e.g. 3073 x 50,000)
+# Y_train are the labels (e.g. 1 x 50,000)
+# L evaluates the loss function
+
+bestloss = float("inf") # Python assigns the highest possible float value
+for num in xrange(1000):
+  W = np.random.randn(10, 3073) * 0.0001 # generate random parameters
+  loss = L(X_train, Y_train, W) # get the loss over the entir training set
+  if loss < bestloss: #track the best solution
+    bestloss = loss
+    bestW = W
+  print 'In attemp %d the loss was %f, best %f' % (num, loss, bestloss)
+
+# Assume X_test is [3073 x 10000], Y_test is [10000 x 1]
+scores = Wbest.dot(Xte_cols) # 10 x 10000, the class scores for all test examples
+# find the index with max score in each column, i.e. the predicted class
+Yte_predict = np.argmax(scores, axis = 0)
+# calculate accuracy (fraction of predictions that are correct)
+np.mean(Yte_predict == Yte)
+# returns 0.1555
+```
+
+**_Strategy 2: Random local search:_** tries to extend one foot in a random direction and take a step only if it leads downhill. 
+
+* Start out with a random **W**
+* generate random perturbation $$\deltaW$$, if the loss at the perturbed $$W + \deltaW$$ is lower, then updata
+
+```python
+W = np.random.randn(10, 3073) * 0.001 # generate random starting W
+bestloss = float("inf")
+for i in xrange(1000):
+  step_size = 0.0001
+  Wtry = W + np.random.randn(10, 3073) * step_size
+  loss = L(Xtr_cols, Ytr, Wtry)
+  if loss < bestloss:
+    W = Wtry
+    bestloss = loss
+  print 'iter %d loss is %f' % (i, bestloss)
+# returns 0.214
+
+```
+**_Strategy 3: Following the gradient:_** computes the best direction along which we should change our weight vector that is mathematically guraranteed to be the direction of the steepest descent. This direction will be related to the **gradient** of the loss function.
+
+What is the gradient?
+
+* 1-D functions, derivatives, the gradient is the vector of sploes for each dimension
+* x-D functions, partial derivatives, the gradient is the vector of partial derivatives in each dimension
+
+How to compute the gradient?
+
+* numerical gradient: compute numerically with finite differences 
+
+```python
+def eval_numerical_gradient(f, x):
+  """
+  a naive implementation of numerical gradient of f at x
+  - f is a function that takes a single argument
+  - x is the point (numpy array) to evaluate the gradient at 
+  """
+
+```
+
+* analytic gradient: compute analytically with Calculus
+
+**_gradient descent_** mini-batch GD, stochastic GD (i.e. on-line gradient descent)
+
 
 #### Linear Regression with One/Multiple Variables
 
