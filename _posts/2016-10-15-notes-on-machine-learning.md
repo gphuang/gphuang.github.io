@@ -11,7 +11,7 @@ Table of Contents:
 - [Classification](#Classification)
   - [Nearest Neighbor Classifier](#NearestNeighborClassifier)
   - [Linear Classifier](#LinearClassifier)
-  - [Non-linear Classification with Neural Networks](#NonLinearClassifier)
+  - [Non-linear Classifier with Neural Networks](#NonLinearClassifier)
     - [Architecture](#Architecture)
     - [Data and Loss Function](#DataandLossFunction)
     - [Learning and Evaluation](#LearningandEvaluation)
