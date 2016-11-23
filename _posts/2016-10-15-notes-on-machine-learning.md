@@ -18,9 +18,9 @@ Table of Contents:
     - [Case Study](#CaseStudy)
   - [Convolutional Neural Networks](#CNN)
   - [Recurrent Neural Networks](#RNN)
- - [Application to Audio: Human Speech and Language Processing](#AppHSLP)
- - [Application to Vision: Image and Video Processing](#APPVIVP)
- - [Summary](#summary)
+- [Application to Audio: Human Speech and Language Processing](#AppHSLP)
+- [Application to Vision: Image and Video Processing](#APPVIVP)
+- [Summary](#summary)
 
 The fundamental goal of machine learning is to generalize beyond the examples in the training set.
 
