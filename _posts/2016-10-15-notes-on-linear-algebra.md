@@ -36,20 +36,74 @@ X = np.transpose(np.array([x, y, z]))
 ```
 <a name='derivatives'></a>
 
-### Vector, Matrix, and Tensor Derivatives
+## [Vector, Matrix, and Tensor Derivatives](http://cs231n.stanford.edu/vecDerivs.pdf)
 
-more at http://cs231n.stanford.edu/vecDerivs.pdf
+**_Row vectors_**
+
+$$
+\vec{x}: 1*D
+\vec{y} : 1*C
+W: D*C
+
+\vec{y} = \vec{x}W
+
+\vec(y_3} = \sum_{j=1}^{D}\vec(x_j)W_{j,3}
+
+\frac{\partial\vec{y_3}}{\partial\vec{x_7}} = W_{7,3}
+
+\frac{\partial\vec{y}}{\partial\vec{x}} = W
 
 
-### Rule of thumb
+$$
 
-```
+**_3 Dimensional array_**
+
+$$
+\vec{y_3} = \vec{x_1}W_{1,3} + \ved{x_2}W_{2,3} + \cdots + \vec{x_D}W_{D,3}
+
+\frac{\partial\vec{y_3}}{\partial\vec{x_2}} = W_{2,3}
+
+\frac{\partial\vec{y_j}}{\partial\vec{x_i}} = W_{i,j}
+
+$$
+
+**_Multiple data points_**
+
+$$
+X: N*D
+W: D*C
+Y: N*C
+
+Y = XW
+
+\frac{\partialY_{i,j}}{\partialX_{i,k}} = W_{k,j}
+
+\frac{\partialY_{i,:}}{\partialX_{i,:}} = W
+
+i.e.
+
+\frac{\partial\vec{y}}{\partial\vec{x}} = W
+
+$$
+
+**_Chain rule_**
+
+$$
+\vec{y} = VW\vec{x}
+
+\frac{d\vec{y_i}}{d\vec{x_j}} = \sum_{k=1}^{M}\frac{d\vec{y_i}}{d\vec{m_k}}\frac{d\vec{m_k}}{d\vec{x_j}}
+
+= \sum_{k=1}^{M}V_{i,k}W_{k,j}
+
+$$
+
+**_tips_**
 row x matrix = row\_picture
 matrix x column = col\_picture
 row x column = scalar
 elimination views matrix as stacked rows or cols
 permutation views manipulate row/col vectors
-```
+
 
 <a name='Optimization'></a>
 
@@ -182,6 +236,7 @@ dX = W.T.dot(dD)
 
 ```
 
+**_tips_**
 *calculus
 *algebra
 *geometry 
