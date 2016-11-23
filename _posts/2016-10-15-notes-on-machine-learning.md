@@ -114,6 +114,8 @@ Three core components of the (image) classification task:
 
 $$ f(x_i, W, b) = W*x_i + b $$
 
+binary Softmax classifier (also known as logistic regression)
+
 #### Loss Function
 
 **_loss function_** measures our unhappiness with outcomes, sometimes also referred to as the cost function or the objective function.
@@ -214,25 +216,6 @@ X &= [1, X_1 X_2 \cdots X_n]
 
 #### Logistic Regression
 
-### Optimization
-
-**_gradient descent_** mini-batch GD, stochastic GD (i.e. on-line gradient descent)
-
-### Backpropagation
-
-computing the gradient analytically using the chain rule, i.e. backpropagation.
-
-Intuition with gates
-
-* mini-batch SGD loop:
-  - sample
-  - forward loss
-  - backward gradient
-  - update weights
-
-* layer - gate
-* weight - parameters
-* forward - backward pass
 
 ## Non-linear Classification with Neural Networks
 
@@ -254,25 +237,32 @@ Intuition with gates
   - visualise the behavior, complexity, and topology of such networks
 * On an example dataset, with each layer, the network transforms the data, creating a new representation
 
-### Continuous Visualization of Layers
-* A linear transformation by the “weight” matrix
-* A translation by the vector
-* Point-wise application of e.g., tanh.
+### Architecture
 
-## Recurrent Neural Networks
+#### Biological motivation
 
-**_Goal:_**
-  * Implement recurrent networks, and apply them to image captioning on Microsoft COCO.
-  * Understand the architecture of recurrent neural networks (RNNs) and how they operate on sequences by sharing weights over time
-  * Understand the difference between vanilla RNNs and Long-Short Term Memory (LSTM) RNNs
-  * Understand how to sample from an RNN at test-time
-  * Understand how to combine convolutional neural nets and recurrent nets to implement an image captioning system
-  * Understand how a trained convolutional network can be used to compute gradients with respect to the input image
-  * Implement and different applications of image gradients, including saliency maps, fooling images, class visualizations, feature inversion, and DeepDream.
+```python
 
+# sigmoid activation function
+def sigmoid(x):
+  return 1.0/(1.0 + math.exp(-x))
 
-## Case Studies
-### Problem setting 1: linear dataset
+class Neuron(object):
+  # example of forward propagating a single neuron
+  def forward(inputs):
+    """ assume inputs and weights are 1-D numpy arrays and bia is a number """
+    cell_body_sum = np.sum(inputs * self.weights) + self.bias
+    firing_rate = sigmoid(cell_synapse)
+    return firing_rate
+```
+
+### Data and Loss Function
+
+### Learning and Evaluation
+
+### Case study
+
+#### Problem setting 1: linear dataset
 
 ```
 1x + 2y + 3 z = 12
@@ -295,7 +285,7 @@ X = np.transpose(np.array([x, y, z]))
 TBD
 ```
 
-### Problem setting 2: non-linear (spiral) dataset
+#### Problem setting 2: non-linear (spiral) dataset
 
 ```python
 import numpy as np
@@ -326,6 +316,24 @@ def L_ivectorized(x, y, w):
 ```
 
 "Sigmoid Function," also called the "Logistic Function":
+
+## Convolutional Neural Networks
+
+## Recurrent Neural Networks
+
+**_Goal:_**
+  * Implement recurrent networks, and apply them to image captioning on Microsoft COCO.
+  * Understand the architecture of recurrent neural networks (RNNs) and how they operate on sequences by sharing weights over time
+  * Understand the difference between vanilla RNNs and Long-Short Term Memory (LSTM) RNNs
+  * Understand how to sample from an RNN at test-time
+  * Understand how to combine convolutional neural nets and recurrent nets to implement an image captioning system
+  * Understand how a trained convolutional network can be used to compute gradients with respect to the input image
+  * Implement and different applications of image gradients, including saliency maps, fooling images, class visualizations, feature inversion, and DeepDream.
+
+### Continuous Visualization of Layers
+  * A linear transformation by the “weight” matrix
+  * A translation by the vector
+  * Point-wise application of e.g., tanh.
 
 ## Application to Audio: Human Speech and Language Processing
 

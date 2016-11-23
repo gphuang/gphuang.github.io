@@ -34,3 +34,23 @@ row x column = scalar
 elimination views matrix as stacked rows or cols
 permutation views manipulate row/col vectors
 ```
+
+## Optimization
+
+**_gradient descent_** mini-batch GD, stochastic GD (i.e. on-line gradient descent)
+
+## Backpropagation
+
+computing the gradient analytically using the chain rule, i.e. backpropagation.
+
+Intuition with gates
+
+* mini-batch SGD loop:
+  - sample
+  - forward loss
+  - backward gradient
+  - update weights
+
+* layer - gate
+* weight - parameters
+* forward - backward pass
