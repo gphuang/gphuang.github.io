@@ -337,6 +337,8 @@ def L_ivectorized(x, y, w):
 
 ## Application to Audio: Human Speech and Language Processing
 
+polyphonic sound eventdetection in real life recordings
+
 ## Application to Vision: Image and Video Processing
 
 ### Historical Context
