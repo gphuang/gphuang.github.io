@@ -10,7 +10,6 @@ Table of Contents:
 
 - [Matrix basics](#Matrix)
   - [Vector, Matrix, and Tensor Derivatives](#Derivatives)
-- [Optimization](#Optimization)
 - [Backpropagation](#Backpropagation)
 - [Summary](#summary)
 
