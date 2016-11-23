@@ -339,6 +339,15 @@ def L_ivectorized(x, y, w):
 
 polyphonic sound eventdetection in real life recordings
 
+**_Motivation_** It is a way of x, which is critical for x, and x.
+
+**_Problem statement_** The core problem studies is: 
+
+Given x, where x, and we want to compute/debug x.
+
+**_Expressions and interpretation of the problem_**
+
+
 ## Application to Vision: Image and Video Processing
 
 ### Historical Context
