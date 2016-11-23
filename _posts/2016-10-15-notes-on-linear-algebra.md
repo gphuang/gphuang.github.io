@@ -6,6 +6,16 @@ author:       "GP Huang"
 
 A quick review of related concepts.
 
+Table of Contents:
+
+- [Matrix basics](#matrix)
+  - [Vector, Matrix, and Tensor Derivatives](#derivatives)
+- [Optimization](#Optimization)
+- [Backpropagation](#Backpropagation)
+- [Summary](#summary)
+
+<a name='matrix'></a>
+
 ## Matrix basics
 
 ### Problem setting
@@ -24,6 +34,7 @@ A = np.array(np.mat(‘1 2 3; 2 3 4; 3 4 5’))
 A = np.array([[1, 2, 3], [2, 3, 4], [3, 4, 5]])
 X = np.transpose(np.array([x, y, z]))
 ```
+<a name='derivatives'></a>
 
 ### Vector, Matrix, and Tensor Derivatives
 
@@ -40,9 +51,13 @@ elimination views matrix as stacked rows or cols
 permutation views manipulate row/col vectors
 ```
 
+<a name='Optimization'></a>
+
 ## Optimization
 
 **_gradient descent_** mini-batch GD, stochastic GD (i.e. on-line gradient descent)
+
+<a name='Backpropagation'></a>
 
 ## Backpropagation
 
