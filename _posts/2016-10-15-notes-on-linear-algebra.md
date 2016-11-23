@@ -8,13 +8,13 @@ A quick review of related concepts.
 
 Table of Contents:
 
-- [Matrix basics](#matrix)
-  - [Vector, Matrix, and Tensor Derivatives](#derivatives)
+- [Matrix basics](#Matrix)
+  - [Vector, Matrix, and Tensor Derivatives](#Derivatives)
 - [Optimization](#Optimization)
 - [Backpropagation](#Backpropagation)
 - [Summary](#summary)
 
-<a name='matrix'></a>
+<a name='Matrix'></a>
 
 ## Matrix basics
 
@@ -34,9 +34,11 @@ A = np.array(np.mat(‘1 2 3; 2 3 4; 3 4 5’))
 A = np.array([[1, 2, 3], [2, 3, 4], [3, 4, 5]])
 X = np.transpose(np.array([x, y, z]))
 ```
-<a name='derivatives'></a>
+<a name='Derivatives'></a>
 
-## [Vector, Matrix, and Tensor Derivatives](http://cs231n.stanford.edu/vecDerivs.pdf)
+## Vector, Matrix, and Tensor Derivatives
+
+More details [here](http://cs231n.stanford.edu/vecDerivs.pdf) 
 
 **_Row vectors_**
 
@@ -103,13 +105,6 @@ matrix x column = col\_picture
 row x column = scalar
 elimination views matrix as stacked rows or cols
 permutation views manipulate row/col vectors
-
-
-<a name='Optimization'></a>
-
-## Optimization
-
-**_gradient descent_** mini-batch GD, stochastic GD (i.e. on-line gradient descent)
 
 <a name='Backpropagation'></a>
 
