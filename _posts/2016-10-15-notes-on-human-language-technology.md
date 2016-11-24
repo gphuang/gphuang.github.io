@@ -9,6 +9,7 @@ A quick review of related concepts.
 Table of Contents:
 
 - [Language Modeling](#lm)
+ - [Problem](#prob)
  - [Introduction and Intuiation of N-Grams](#intro)
  - [NNLM](#nnlm)
  - [Benchmarking Test on English PTB](#bench)
@@ -20,8 +21,11 @@ Table of Contents:
 - [Summary](#summary)
 - [Additional references](#add)
 
-<a name='lm'></a>
+<a name='prob'></a>
+## Problems
+we have sparse data
 
+<a name='lm'></a>
 ## Language Modeling
 
 Looking at the research topic, basice definitions, major problems, trend, and possible solutions.
@@ -54,7 +58,7 @@ P(w_i|w_1,w_2,\cdots,w_{i-1}) \approx  = P(w_i|w_{i-k},\cdots,w_{i-1})
 thus,
 P(w1,w2,\cdots,w_{n}) \approx  = \prod_iP(w_i|w_{i-k},\cdots,w_{i-1})
 $$
-- bigram example:
+- maximum likelihood estimation, with bigram example:
 $$
 P(w_i|w_{i-1}) = \frac{count(w_{i-1},w_i)}{count(w_{i-1})}
 $$
@@ -71,7 +75,11 @@ paste txtf.words txtf.nextwords | sort | uniq -c | sort -nr > txtf.bigram
 About N-grams
 - N-grams models are insufficient models of languages, because language has **long-distance dependencies**
 - The best LM is one that predicts an unseen test set with the highest P(sentence), thus lowest PPL
+
+Solutions
 - N-grams only work well for word prediction if the test corpus looks like the training corpus, thus we need to train robust LMs that generalize!
+- Steal probability mass to generalize better, Add-1 estimate
+
 
 PPL:
 - logrithm: multiplication, addition
@@ -83,8 +91,21 @@ PPL = P(sentence) = P(w_1,w_2,\cdots,w_N)^{1/N}
 $$
 
 Generalzation methods
-- add-one(Laplace) smoothing
-
+- smoothing
+ - add-1 (Laplace): blunt for N-gram, but decent to smooth other NLP models, e.g. text classification
+ - add-k
+ - intruitions: Good-Turing, Kneser-Ney, Witten-Bell
+- backoff: use less context - use trigram if good evidence, otherwise bigram, otherwise unigram
+- interpolation: mix unigram, bigram, trigram
+ - linear
+ - non-linear
+- pruning: select N-grams 
+ - threshold-based, count > threshold
+ - entropy-based
+- others
+ - discriminative models
+ - parsing-based models
+ - caching models
 
 <a name='nnlm'></a>
 
