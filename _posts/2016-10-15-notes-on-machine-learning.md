@@ -319,6 +319,30 @@ return grad
 
 ```
 
+Compute gradient for the CIFAR-10 loss function at some random point in the weight space:
+
+```python
+# a function that takes a single argument, the weights,
+def CIFAR10_loss-fun(W):
+  return L(X_train, Y_train, W)
+  
+ W = np.random.rand(10, 3073) * 0.001 # random weigth vector
+ df = eval_numerical_gradient(CIFAR10_loss_fun, W) # get the gradient
+ 
+# the gradient tells the slpe of the loss function along every dimension, we use it to make an updat
+loss_original = CIFAR10_Loss_fun(W) # original loss
+print 'original loss: %f' % (loss_original, )
+
+# effect of multiple step sizes
+for step_size_log in [-10:1:-1]
+  step_size = 10**step_size_log
+  W_new = W - step_size*df 
+  loss_new = CIFAR10_loss_fun(W_new)
+  print 'for step size %f new loss: %f' % (step_size, loss_new)
+
+```
+
+
 * analytic gradient: compute analytically with Calculus
 
 **_gradient descent_** mini-batch GD, stochastic GD (i.e. on-line gradient descent)
