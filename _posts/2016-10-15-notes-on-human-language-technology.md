@@ -68,7 +68,22 @@ paste txtf.words txtf.nextwords | sort | uniq -c | sort -nr > txtf.bigram
 
 ```
 
-N-grams models are insufficient models of languages, because language has **long-distance dependencies"
+About N-grams
+- N-grams models are insufficient models of languages, because language has **long-distance dependencies**
+- The best LM is one that predicts an unseen test set with the highest P(sentence), thus lowest PPL
+- N-grams only work well for word prediction if the test corpus looks like the training corpus, thus we need to train robust LMs that generalize!
+
+PPL:
+- logrithm: multiplication, addition
+- Extrinsic evaluation: comparing models A and B in an actual task, e.g., rate of OOV reduction - time consuming
+- Intrisic evaluation: perplxity - bad approximation, subject to the matching condition of training/testing data, good for pilot experiments
+
+$$
+PPL = P(sentence) = P(w_1,w_2,\cdots,w_N)^{1/N}
+$$
+
+Generalzation methods
+- add-one(Laplace) smoothing
 
 
 <a name='nnlm'></a>
