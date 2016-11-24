@@ -9,7 +9,7 @@ A quick review of related concepts.
 Table of Contents:
 
 - [Language Modeling](#lm)
- - [Introduction and Intuiation of N-Grams]](#intro)
+ - [Introduction and Intuiation of N-Grams](#intro)
  - [NNLM](#nnlm)
  - [Benchmarking Test on English PTB](#bench)
 - [Pronunciation Modeling]
@@ -21,6 +21,7 @@ Table of Contents:
 - [Additional references](#add)
 
 <a name='lm'></a>
+
 ## Language Modeling
 
 Looking at the research topic, basice definitions, major problems, trend, and possible solutions.
@@ -69,9 +70,13 @@ paste txtf.words txtf.nextwords | sort | uniq -c | sort -nr > txtf.bigram
 
 N-grams models are insufficient models of languages, because language has **long-distance dependencies"
 
-```
 
-```
+<a name='nnlm'></a>
+
+### NNLM
+
+<a name='bench'></a>
+### Benchmarking Test on English PTB
 
 ## Further Reading
 
