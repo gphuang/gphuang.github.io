@@ -6,7 +6,7 @@ date:   2016-11-19 22:00:00
 mathjax: true
 ---
 
-Table of Contents:
+Table of Contents
 
 - [Classification](#Classification)
   - [Nearest Neighbor Classifier](#NearestNeighborClassifier)
@@ -21,6 +21,7 @@ Table of Contents:
     - [Case Study](#CaseStudy)
   - [Convolutional Neural Networks](#CNN)
   - [Recurrent Neural Networks](#RNN)
+- [Application: Toy Example](#ToyExample)
 - [Application to Audio: Human Speech and Language Processing](#AppHSLP)
 - [Application to Vision: Image and Video Processing](#APPVIVP)
 - [Summary](#summary)
@@ -37,7 +38,7 @@ The fundamental goal of machine learning is to generalize beyond the examples in
 
 ## Classification
 
-**_Goal:_**
+**_Goals_**
 
 * build a simple image classification pipeline, based on the k-Nearest Neighbor or the SVM/Softmax classifier.
 * understand the basic Image Classification pipeline and the data-driven approach (train/predict stages)
@@ -376,7 +377,7 @@ X &= [1, X_1 X_2 \cdots X_n]
 
 ## Non-linear Classification with Neural Networks
 
-**_Goal:_**
+**_Goals_**
 
 * write backpropagation code, and train Neural Networks and Convolutional Neural Networks.
 * understand Neural Networks and how they are arranged in layered architectures
@@ -488,7 +489,7 @@ def L_ivectorized(x, y, w):
 <a name='RNN'></a>
 ### Recurrent Neural Networks
 
-**_Goal:_**
+**_Goals_**
   * Implement recurrent networks, and apply them to image captioning on Microsoft COCO.
   * Understand the architecture of recurrent neural networks (RNNs) and how they operate on sequences by sharing weights over time
   * Understand the difference between vanilla RNNs and Long-Short Term Memory (LSTM) RNNs
@@ -501,6 +502,16 @@ def L_ivectorized(x, y, w):
   * A linear transformation by the “weight” matrix
   * A translation by the vector
   * Point-wise application of e.g., tanh.
+  
+  
+<a name='ToyExample'></a>
+
+## Toy Example
+
+
+
+### 
+
 
 <a name='AppHSLP'></a>
 
