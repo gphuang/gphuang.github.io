@@ -39,9 +39,11 @@ Table of Contents
 
 The fundamental goal of machine learning is to generalize beyond the examples in the training set.
 
-> (Machine learning is) the field of study that gives computers the ability to learn without being explicitly programmed -- Arthur Samuel
+> (Machine learning is) the field of study that gives computers the ability to learn without being explicitly programmed
+> -- Arthur Samuel
 
-> A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E. -- Tom Mitchell
+> A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E.
+> -- Tom Mitchell
 
 **_Key Elements of ML Algorithm_**
 
@@ -51,26 +53,30 @@ The fundamental goal of machine learning is to generalize beyond the examples in
 
 <a name ='ModelRepresentation'></a>
 
-## Model Representation
+### Model Representation
 
 Notation | Representation
 ---------|---------------
 x^{(i)}  | input variables, input features
 y^{(i)}  | output or target variable, to be predicted
 (x^{(i)}, y^{(i)}) | a training example
-(x^{(i)}, y^{(i)}); i = 1, ..., m | a training set
+(x^{(i)}, y^{(i)}); (i = 1, ..., m) | a training set
 X | the input space
 Y | the output space
-h: X \rightarrow Y | a hypothesis function 
+h: X \rightarrow Y | a hypothesis function
 
+<div style="text-align:center;"><img src="/assets/fig_ml_dataflow.png"  width="50%"></div>
+[Figure: ]
+
+![Dataflow in a typical ML system](/assets/fig_ml_dataflow.png)
 
 <a name ='CostFunction'></a>
 
-##Cost Function
+### Cost Function
 
 <a name ='ParameterLearning'></a>
 
-## Parameter Learning via Gradient Descent
+### Parameter Learning via Gradient Descent
 
 
 
