@@ -35,6 +35,8 @@ Table of Contents
 
 ## Basics
 
+![Dataflow in a typical ML system](/assets/fig_ml_dataflow.png)
+
 **_Questions: what is machine learning?_**
 
 The fundamental goal of machine learning is to generalize beyond the examples in the training set.
@@ -53,7 +55,6 @@ The fundamental goal of machine learning is to generalize beyond the examples in
 
 ### Model Representation
 
-Notation | Representation
 ---------|---------------
 x^{(i)}  | input variables, input features
 y^{(i)}  | output or target variable, to be predicted
@@ -63,18 +64,33 @@ X | the input space
 Y | the output space
 h: X \rightarrow Y | a hypothesis function
 
-
-![Dataflow in a typical ML system](/assets/fig_ml_dataflow.png)
-
 <a name ='CostFunction'></a>
 
-### Cost Function
+### Cost Function: how well does the hypothesis function fit the input data?
+
+** Cost function ** measures the accuracy of the hypothesis function, e.g. mean square error function.
+Our objective is to get the lowest prediction error.
 
 <a name ='ParameterLearning'></a>
 
 ### Parameter Learning via Gradient Descent
 
+** Gradient descent ** estimates the parameters in the hypothesis function, by taking the (partial) derivatives of the the cost function.
+It repeatedly and simultaneously updates the parameters until convergence.
 
+```python
+# compute gradients w.r.t. existing parameters 
+grad = function_SGD(x, w1, w2)
+
+# compute new parameters
+w1_ = w1 - step_size*grad
+w2_ = w2 - step_size*grad
+
+# update parameters
+w1 = w1_
+w2 = w2_
+
+```
 
 <a name ='Classification'></a>
 
