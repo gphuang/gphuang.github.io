@@ -79,7 +79,7 @@ Our objective is to get the lowest prediction error.
 It repeatedly and simultaneously updates the parameters until convergence.
 
 ```python
-# compute gradients w.r.t. existing parameters 
+# compute gradients w.r.t. existing parameters
 grad = function_SGD(x, w1, w2)
 
 # compute new parameters
@@ -89,8 +89,11 @@ w2_ = w2 - step_size*grad
 # update parameters
 w1 = w1_
 w2 = w2_
-
 ```
+
+Difficulties:
+- step size, i.e. learning rate
+- gradient descent method, e.g. batch, online, stochastic
 
 <a name ='Classification'></a>
 
