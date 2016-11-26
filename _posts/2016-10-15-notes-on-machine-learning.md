@@ -35,8 +35,6 @@ Table of Contents
 
 ## Basics
 
-![Dataflow in a typical ML system](/assets/fig_ml_dataflow.png)
-
 **_Questions: what is machine learning?_**
 
 The fundamental goal of machine learning is to generalize beyond the examples in the training set.
@@ -54,6 +52,10 @@ The fundamental goal of machine learning is to generalize beyond the examples in
 <a name ='ModelRepresentation'></a>
 
 ### Model Representation
+
+A typical machine learning model: 
+
+![Dataflow in a typical ML system](/assets/fig_ml_dataflow.png)
 
 ---------|---------------
 x^{(i)}  | input variables, input features
