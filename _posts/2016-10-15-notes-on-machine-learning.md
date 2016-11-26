@@ -7,6 +7,10 @@ mathjax: true
 ---
 
 Table of Contents
+- [Basics](#Basics)
+  - [Model Representation](#ModelRepresentation)
+  - [Cost Function](#CostFunction)
+  - [Parameter Learning via Gradient Descent](#ParameterLearning)
 
 - [Classification](#Classification)
   - [Nearest Neighbor Classifier](#NearestNeighborClassifier)
@@ -26,13 +30,36 @@ Table of Contents
 - [Application to Vision: Image and Video Processing](#APPVIVP)
 - [Summary](#summary)
 
+<a name='Basics'></a>
+## Basics
+
+**_Questions: what is machine learning?_**
+
 The fundamental goal of machine learning is to generalize beyond the examples in the training set.
+
+<p class="lead">"(Machine learning is) the field of study that gives computers the ability to learn without being explicitly programmed." -- Arthur Samuel
+
+"A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E." -- Tom Mitchell </p>
 
 **_Key Elements of ML Algorithm_**
 
 * Representation: how to represent knowledge. Examples include decision trees, sets of rules, instances, graphical models, neural networks, support vector machines, model ensembles and others.
 * Evaluation: the way to evaluate candidate programs (hypotheses). Examples include accuracy, prediction and recall, squared error, likelihood, posterior probability, cost, margin, entropy k-L divergence and others.
 * Optimization: the way candidate programs are generated known as the search process. For example combinatorial optimization, convex optimization, constrained optimization.
+
+<a name ='ModelRepresentation'></a>
+
+## Model Representation
+
+<a name ='CostFunction'></a>
+
+##Cost Function
+
+<a name ='ParameterLearning'></a>
+
+## Parameter Learning via Gradient Descent
+
+
 
 <a name ='Classification'></a>
 
