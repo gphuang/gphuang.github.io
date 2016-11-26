@@ -6,7 +6,7 @@ date:   2016-11-19 22:00:00
 mathjax: true
 ---
 
-Table of Contents
+Table of Contents:
 
 - [Basics](#Basics)
   - [Model Representation](#ModelRepresentation)
