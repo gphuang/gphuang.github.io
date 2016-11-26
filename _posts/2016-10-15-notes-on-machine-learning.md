@@ -7,6 +7,7 @@ mathjax: true
 ---
 
 Table of Contents
+
 - [Basics](#Basics)
   - [Model Representation](#ModelRepresentation)
   - [Cost Function](#CostFunction)
