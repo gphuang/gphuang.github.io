@@ -10,7 +10,7 @@ Table of Contents:
 
 - [Language Modeling](#lm)
  - [Problem](#prob)
- - [Introduction and Intuiation of N-Grams](#intro)
+ - [Introduction and Intuition of N-Grams](#intro)
  - [NNLM](#nnlm)
  - [Benchmarking Test on English PTB](#bench)
 - [Pronunciation Modeling]
@@ -28,24 +28,24 @@ we have sparse data
 <a name='lm'></a>
 ## Language Modeling
 
-Looking at the research topic, basice definitions, major problems, trend, and possible solutions.
+Looking at the research topic, basic definitions, major problems, trend, and possible solutions.
 
 <a name='intro'></a>
 
-### Introduction and Intuiation
+### Introduction and Intuition
 
-**_Definition_**: the language model or LM, even better 'grammar' tell 
-- the probablity of how likely is a sentence or sequence of words. $$P(w1,w2,\cdots,w_{n})$$
-- the probablity of an upcoming word: $$P(w_n|w1,w2,\cdots,w_{n-1})$$
+**_Definition_**: the language model or LM, even better 'grammar' tell
+- the probability of how likely is a sentence or sequence of words. $$P(w1,w2,\cdots,w_{n})$$
+- the probability of an upcoming word: $$P(w_n|w1,w2,\cdots,w_{n-1})$$
 
-Applications: machine translation, spell correction, question-ansering, and speech recognition etc.
+Applications: machine translation, spell correction, question-answering, and speech recognition etc.
 
-Computation: chain rule 
+Computation: chain rule
 - compute joint probability using conditional probability
 - Immediate approach counts and divide: not realistic given usually limited amount of text data
 
 $$
-P(w1,w2,\cdots,w_{n}) 
+P(w1,w2,\cdots,w_{n})
 = P(w_1)P(w_2|w_1)P(w_3|w1,w2) \cdots P(w_n|w_1,w_2,\cdots,w_{n-1})
 = \prod_iP(w_i|w_1,w_2,\cdots,w_{i-1})
 $$
@@ -82,24 +82,24 @@ Solutions
 
 
 PPL:
-- logrithm: multiplication, addition
+- logarithm: multiplication, addition
 - Extrinsic evaluation: comparing models A and B in an actual task, e.g., rate of OOV reduction - time consuming
-- Intrisic evaluation: perplxity - bad approximation, subject to the matching condition of training/testing data, good for pilot experiments
+- Intrinsic evaluation: perplexity - bad approximation, subject to the matching condition of training/testing data, good for pilot experiments
 
 $$
 PPL = P(sentence) = P(w_1,w_2,\cdots,w_N)^{1/N}
 $$
 
-Generalzation methods
+Generalization methods
 - smoothing
  - add-1 (Laplace): blunt for N-gram, but decent to smooth other NLP models, e.g. text classification
  - add-k
- - intruitions: Good-Turing, Kneser-Ney, Witten-Bell
+ - intuitions: Good-Turing, Kneser-Ney, Witten-Bell
 - backoff: use less context - use trigram if good evidence, otherwise bigram, otherwise unigram
 - interpolation: mix unigram, bigram, trigram
  - linear
  - non-linear
-- pruning: select N-grams 
+- pruning: select N-grams
  - threshold-based, count > threshold
  - entropy-based
 - others

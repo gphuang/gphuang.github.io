@@ -260,7 +260,7 @@ np.mean(Yte_predict == Yte)
 # returns 0.1555
 ```
 
-**_Strategy 2: Random local search:_** tries to extend one foot in a random direction and take a step only if it leads downhill. 
+**_Strategy 2: Random local search:_** tries to extend one foot in a random direction and take a step only if it leads downhill.
 
 * Start out with a random **W**
 * generate random perturbation $$\deltaW$$, if the loss at the perturbed $$W + \deltaW$$ is lower, then updata
@@ -279,43 +279,43 @@ for i in xrange(1000):
 # returns 0.214
 
 ```
-**_Strategy 3: Following the gradient:_** computes the best direction along which we should change our weight vector that is mathematically guraranteed to be the direction of the steepest descent. This direction will be related to the **gradient** of the loss function.
+**_Strategy 3: Following the gradient:_** computes the best direction along which we should change our weight vector that is mathematically guaranteed to be the direction of the steepest descent. This direction will be related to the **gradient** of the loss function.
 
 What is the gradient?
 
-* 1-D functions, derivatives, the gradient is the vector of sploes for each dimension
+* 1-D functions, derivatives, the gradient is the vector of slopes for each dimension
 * x-D functions, partial derivatives, the gradient is the vector of partial derivatives in each dimension
 
 How to compute the gradient?
 
-* numerical gradient: compute numerically with finite differences 
+* numerical gradient: compute numerically with finite differences
 
 ```python
 def eval_numerical_gradient(f, x):
   """
   a naive implementation of numerical gradient of f at x
   - f is a function that takes a single argument
-  - x is the point (numpy array) to evaluate the gradient at 
+  - x is the point (numpy array) to evaluate the gradient at
   """
   fx = f(x) # evaluate function value at original point
   grad = np.zeros(x.shape)
   h = 0.00001
-  
+
   # iterate over all indexes in x
   it = np.nditer(x, flags=['multi_index'], op_flags=['readwrite'])
   while not it.finished:
-    
+
     # evaluate function at x+h
     ix = it.multi_index
     old_value = x[ix]
     x[ix] = old_value + h # increment by h
     fxh = f(x) # evaluate f(x+h)
     x [ix] = old_value # restore to previous value (!!!important)
-    
+
     # compute the partial derivative
     grad[ix] = (fxh -fx) /h # the slope
     it.iternext() # step to next dimension
-    
+
 return grad
 
 ```
@@ -326,18 +326,18 @@ Compute gradient for the CIFAR-10 loss function at some random point in the weig
 # a function that takes a single argument, the weights,
 def CIFAR10_loss-fun(W):
   return L(X_train, Y_train, W)
-  
- W = np.random.rand(10, 3073) * 0.001 # random weigth vector
+
+ W = np.random.rand(10, 3073) * 0.001 # random weight vector
  df = eval_numerical_gradient(CIFAR10_loss_fun, W) # get the gradient
- 
-# the gradient tells the slpe of the loss function along every dimension, we use it to make an updat
+
+# the gradient tells the slope of the loss function along every dimension, we use it to make an update
 loss_original = CIFAR10_Loss_fun(W) # original loss
 print 'original loss: %f' % (loss_original, )
 
 # effect of multiple step sizes
 for step_size_log in [-10:1:-1]
   step_size = 10**step_size_log
-  W_new = W - step_size*df 
+  W_new = W - step_size*df
   loss_new = CIFAR10_loss_fun(W_new)
   print 'for step size %f new loss: %f' % (step_size, loss_new)
 
@@ -389,7 +389,7 @@ X &= [1, X_1 X_2 \cdots X_n]
 
 **_Questions_**
 
-* what a neural network is really doing, behaviour of deep neural networks
+* what a neural network is really doing, behavior of deep neural networks
 * how it is doing so, when succeeds; and what went wrong when fails.
   - explore low-dimensional deep neural networks when classifying certain datasets
   - visualise the behavior, complexity, and topology of such networks
@@ -502,26 +502,26 @@ def L_ivectorized(x, y, w):
   * A linear transformation by the “weight” matrix
   * A translation by the vector
   * Point-wise application of e.g., tanh.
-  
-  
+
+
 <a name='ToyExample'></a>
 
 ## Toy Example
 
 
 
-### 
+###
 
 
 <a name='AppHSLP'></a>
 
 ## Application to Audio: Human Speech and Language Processing
 
-polyphonic sound eventdetection in real life recordings
+polyphonic sound event detection in real life recordings
 
 **_Motivation_** It is a way of x, which is critical for x, and x.
 
-**_Problem statement_** The core problem studies is: 
+**_Problem statement_** The core problem studies is:
 
 Given x, where x, and we want to compute/debug x.
 
@@ -581,7 +581,7 @@ Historical Context
 * Semi-supervised learning (...)
 * Reinforcement learning (...)
 
-Organization may vary across subjects, this list is mainly from coursera (ML basics) and wiki (ML concepts)
+Organization may vary across subjects, this list is mainly from Coursera (ML basics) and wiki (ML concepts)
 
 **_ML by Outputs_**
 
