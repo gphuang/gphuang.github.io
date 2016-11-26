@@ -487,6 +487,7 @@ def L_ivectorized(x, y, w):
 ### Convolutional Neural Networks
 
 <a name='RNN'></a>
+
 ### Recurrent Neural Networks
 
 **_Goals_**
@@ -507,8 +508,6 @@ def L_ivectorized(x, y, w):
 <a name='ToyExample'></a>
 
 ## Toy Example
-
-
 
 ###
 
