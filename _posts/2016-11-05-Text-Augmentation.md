@@ -8,8 +8,6 @@ author:       "GP Huang"
 
 ## Introduction
 
-This is a continuously going research work.
-
 **Motivation.** The Text Augmentation problem, which is the task of generating additional text data from any existing set of text data, usually from some under-resourced languages, i.e., less than 100 hours of speech or less than 100K words in the training transcripts. (Babel Project)
 This is one of the key areas in Human Language Technology (HLT) that has a many practical applications, such as speech recognition, machine translation, and language modeling.
 If HLT is to propagate to any new/old languages, including 女书, Elvish, and Klingon, it will indefinitely benefit from text augmentation.
@@ -38,7 +36,7 @@ the approach that we will take is not unlike one you would take with a child: we
 **Knowledge-based**
 Working with linguists, with computational approach in mind. JR Meyers
 
-**The pipline**
+**The pipeline**
 
   * Input:
   * Learning:
@@ -46,10 +44,39 @@ Working with linguists, with computational approach in mind. JR Meyers
 
 ## TG1
 
+word units: what is interesting about words is that they are the basic tokens for speaking and writing.
+
+subword units: what is interesting about subwords is that they show the character/syllable/morph composition of words.
+
+For many years, scientists from both linguistic and computer departments have been trying to define our writing system. They do not necessarily agree on one set of rules that formulate each and every human language.
+However, the way they approach a unified or universally or generally agreed-on set of rules shows up how the writing system continues to fascinate and puzzle us.
+School of thoughts:
+- Prof. Chomsky {cite} [link to Computational linguistics]
+- Prof. Stockle {cite} [link to SRILM]
+- Prof. Jurafsky {cite} [link to "The theory of Katch-up"]
+
+Of course, it is harder to induct than to deduct.
+Especially when we are tracing back from existing language back to its origin, and its usage among the population through generations.
+
+[//]: # Would dinosaurs have feathers? vs. Would language have been coded by visitors on their field trip to Earth?
+
+About language families in human history:
+- origin of traceable writing/carving {cite}
+- influence of economy/trade {cite}
+- influence of politics/war/historical events {cite}
+
 ## TG2
 
 ## Related works (Literature review):
 - Recurrent Neural Networks
+
+I have trained RNNs to learn the so-called vector representations of words.
+In theory, these vectors show meaning qualities, mathematically sounding.
+On screen, they are distributed probabilities calculated from the hidden layer of the RNN.
+The format of RNNLM, yes LM by RNN's 'word vectors', is
+- header
+- log probabilities
+- vocabulary words
 
 Basics:
 - transformation to expand training set

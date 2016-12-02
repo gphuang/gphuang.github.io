@@ -6,6 +6,10 @@ date:   2016-11-19 22:00:00
 mathjax: true
 ---
 
+[//]: #  todo: formula insertion 
+
+A quick review of related concepts.
+
 Table of Contents:
 
 - [Basics](#Basics)

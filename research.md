@@ -3,6 +3,8 @@ layout: page
 permalink: /research/
 ---
 
+[//]: #  todo: personal page, pdf files.
+
 ## Motivations
   * to analyze speech/sounds with respect to articulatory and auditory cues.
   * to imitate the dual-process of human speech production and perception.
@@ -10,7 +12,7 @@ permalink: /research/
 
 ## Publications
 
-* [Academic Page](https://www.)
+* [Academic Page] (note: I will try to upload the preprints to my new webpage, and the scripts to github in the near future.)
 
 * [Google Scholar](https://scholar.google.fr/citations?user=hrICCP0AAAAJ&hl=en)
 
@@ -63,9 +65,9 @@ The retrieved articulatory trajectories and the acoustic features are then used 
 
 ## Experiences
 
-**2016 - present**
+**2016 - present** Post-doc: Acoustic Events Analysis
 
-**2015 - 2016** Post-doc: Babel Project - Text Data Augmentation (Cantonese, English)
+**2015 - 2016** Post-doc: Babel - Text Data Augmentation (Cantonese, English)
 
 **2012 - 2015** Post-doc: Speech Segmentation with Multi-View Features (Malay, English)
 
