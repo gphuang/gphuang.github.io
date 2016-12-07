@@ -116,7 +116,11 @@ Ok, it seems all you need is some text to build a LM, i.e. with count priors. Bu
 - are there any shorcomings of the LM?
 
 These questions relate to the quality and quantity of data ressources that are often at the root of the problem.
-They 
+That is to assume you have acquired at lease certain amount of wealth and human labor to collect the text data, or the scientific community at large have created a pool of shared resources, e.g. speech and text corpus, n-grams on certain languages.
+Luckily, there are many such resources available, thanks to the recent popularity of Big Data. 
+For example, you can have a look at [Google's Ngram Viewer](https://books.google.com/ngrams). Type in a word, and see how its usage has varied in history! 
+
+Here are the two main difficulties, data sparsity and OOV, arising from the text data, they are somehow co-related, where the latter is much more specific and is often a direct threat for speech recognition and language understanding tasks.
 
 **_Sparse Data_**
 
