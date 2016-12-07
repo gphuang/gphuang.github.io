@@ -90,7 +90,7 @@ $$
 PPL = P(sentence) = P(w_1,w_2,\cdots,w_N)^{1/N}
 $$
 
-Generalization methods
+**_Generalization methods_**
 - smoothing
  - add-1 (Laplace): blunt for N-gram, but decent to smooth other NLP models, e.g. text classification
  - add-k
@@ -106,6 +106,24 @@ Generalization methods
  - discriminative models
  - parsing-based models
  - caching models
+ 
+### Difficulties
+Ok, it seems all you need is some text to build a LM, i.e. with count priors. But ALAS, the problem starts here, 
+
+- where do you get the text data? 
+- how much text data do you get?
+- how reliable is the distribution of (word) tokens in the text data?
+- are there any shorcomings of the LM?
+
+These questions relate to the quality and quantity of data ressources that are often at the root of the problem.
+They 
+
+**_Sparse Data_**
+
+**_OOV Problem_**
+
+ 
+### Current Trends
 
 <a name='nnlm'></a>
 
