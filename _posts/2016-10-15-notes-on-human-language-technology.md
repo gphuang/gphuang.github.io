@@ -108,12 +108,14 @@ $$
  - caching models
  
 ### Difficulties
-Ok, it seems all you need is some text to build a LM, i.e. with count priors. But ALAS, the problem starts here, 
+Ok, it seems all you need is some text to build a LM, i.e. with count priors. But ALAS, the problem starts here, how do you handle/represent words? more specifically,
 
 - where do you get the text data? 
 - how much text data do you get?
 - how reliable is the distribution of (word) tokens in the text data?
 - are there any shorcomings of the LM?
+- are there enough training examples for the words _seen_?
+- for _unseen_ words, can try _part of speech abstraction_, _prefixes/suffixes abstraction_
 
 These questions relate to the quality and quantity of data ressources that are often at the root of the problem.
 That is to assume you have acquired at lease certain amount of wealth and human labor to collect the text data, or the scientific community at large have created a pool of shared resources, e.g. speech and text corpus, n-grams on certain languages.
@@ -127,8 +129,12 @@ Here are the two main difficulties, data sparsity and OOV, arising from the text
 Sparsity and density
 
 
-
 **_OOV Problem_**
+
+induce word representations from unlabeled text
+
+- HMM-based representations
+- NN-based representations
 
  
 ### Current Trends
@@ -136,6 +142,11 @@ Sparsity and density
 <a name='nnlm'></a>
 
 ### NNLM
+
+The NN learns the embeddings of words, where all words are represented with D-dimensional vectors
+
+- less data sparsity
+- OOV words have non-zero probabilites
 
 <a name='bench'></a>
 ### Benchmarking Test on English PTB
