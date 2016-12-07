@@ -11,4 +11,4 @@ I apply the production and perception features in challenging tasks, such as spe
 On a side enjoy traveling, jogging, drawing, and trying to maintain an active Github account.
 
 ## Contact me
-huang at limsi dot fr
+guangpu dot huang at gmail
