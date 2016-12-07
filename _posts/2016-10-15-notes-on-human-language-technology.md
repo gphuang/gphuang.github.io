@@ -124,6 +124,8 @@ Here are the two main difficulties, data sparsity and OOV, arising from the text
 
 **_Sparse Data_**
 
+Sparsity and density
+
 **_OOV Problem_**
 
  
