@@ -22,10 +22,13 @@ Table of Contents:
 - [Additional references](#add)
 
 <a name='prob'></a>
+
 ## Problems
+
 we have sparse data
 
 <a name='lm'></a>
+
 ## Language Modeling
 
 Looking at the research topic, basic definitions, major problems, trend, and possible solutions.
@@ -149,6 +152,7 @@ The NN learns the embeddings of words, where all words are represented with D-di
 - OOV words have non-zero probabilites
 
 <a name='bench'></a>
+
 ### Benchmarking Test on English PTB
 
 ## Further Reading
