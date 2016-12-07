@@ -126,6 +126,8 @@ Here are the two main difficulties, data sparsity and OOV, arising from the text
 
 Sparsity and density
 
+
+
 **_OOV Problem_**
 
  
@@ -139,6 +141,8 @@ Sparsity and density
 ### Benchmarking Test on English PTB
 
 ## Further Reading
+
+  * [Data Sparsity in NLP](http://cogcomp.cs.illinois.edu/files/presentations/BGU_WordRepresentations_2009.pdf)
 
   * [Natural Language Processing, Prof. Jurafsky](https://class.coursera.org/nlp/lecture)
 
