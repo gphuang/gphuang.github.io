@@ -6,7 +6,7 @@ date:   2016-11-19 22:00:00
 mathjax: true
 ---
 
-[//]: #  todo: formula insertion 
+[//]: #  todo: formula insertion
 
 A quick review of related concepts.
 
@@ -377,7 +377,7 @@ def eval_numerical_gradient(f, x):
     old_value = x[ix]
     x[ix] = old_value + h # increment by h
     fxh = f(x) # evaluate f(x+h)
-    x [ix] = old_value # restore to previous value (!!!important)
+    x[ix] = old_value # restore to previous value (!!!important)
 
     # compute the partial derivative
     grad[ix] = (fxh -fx) /h # the slope

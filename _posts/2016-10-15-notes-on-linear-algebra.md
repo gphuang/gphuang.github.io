@@ -2,6 +2,7 @@
 layout:       post
 title:        "Notes on Linear Algebra"
 author:       "GP Huang"
+date:   2016-11-19 20:00:00
 ---
 
 A quick review of related concepts.
@@ -37,7 +38,7 @@ X = np.transpose(np.array([x, y, z]))
 
 ## Vector, Matrix, and Tensor Derivatives
 
-More details [here](http://cs231n.stanford.edu/vecDerivs.pdf) 
+More details [here](http://cs231n.stanford.edu/vecDerivs.pdf)
 
 **_Row vectors_**
 
@@ -145,16 +146,16 @@ dfdy = 1.0*dfdq # df/dy = dq/dy * df/dq = 1*df/dq
 ```
 
 ```python
-# assume some random weights and data 
-w = [2,-3,-3] 
+# assume some random weights and data
+w = [2,-3,-3]
 x = [-1,-2]
 
 # forward pass
 dot = w[0]*x[0] + w[1]*x[1] + w[2] # dot product x.dot(w.T)
-f = 1.0/(1+math.exp(-dot)) # sigmoid function 
+f = 1.0/(1+math.exp(-dot)) # sigmoid function
 
 # backward pass through the neuron
-ddot = (1-f)*f # sigmoid gradient derivation 
+ddot = (1-f)*f # sigmoid gradient derivation
 dx = [w[0] * ddot, w[1] * ddot] # bp into x, df/dx = df/ddot * ddot/dx = df/ddot * w
 dw = [x[0] * ddot, x[1] * ddot, 1.0*ddot ] # bp into w df/dw = df/ddot * ddot/dw = df/ddot * x
 
@@ -179,9 +180,9 @@ y = -4
 sigy = 1.0/(1 + math.exp(-y)) # sigmoid in numerator   #(1)
 num = x + sigy # numerator                             #(2)
 sigx = 1.0/(1 + math.exp(-x)) # sigmoid in denominator #(3)
-xpy = x + y                                            #(4) 
+xpy = x + y                                            #(4)
 xpysqr = xpy**2                                        #(5)
-den = sigx + xpysqr # denominator                      #(6) 
+den = sigx + xpysqr # denominator                      #(6)
 invden = 1.0/den                                       #(7)
 f = num * invden                                       #(8)
 
@@ -189,9 +190,9 @@ f = num * invden                                       #(8)
 # bp f = num * invden
 dnum = invden                         #(8)
 dinvden = num                         #(8)
-# bp invden = 1.0/den 
+# bp invden = 1.0/den
 dden = (-1.0/(den**2)) * dinvden      #(7)
-# bp den = sigx + xpysqr 
+# bp den = sigx + xpysqr
 dsigx = (1.0)*dden                    #(6)
 dxpysqr = (1.0)*dden                  #(6)
 # bp xpysqr = xpy**2                  
@@ -201,7 +202,7 @@ dx = 1.0*dxpy                         #(4)
 dy = 1.0*dxpy                         #(4)
 # bp sigx = 1.0/(1 + math.exp(-x))
 dx += sigx * (1 - sigx)*dsigx         #(3)
-# bp num = x + sigy 
+# bp num = x + sigy
 dx += (1.0)*dnum                      #(2)
 dsigy = (1.0)*dnum                    #(2)
 # bp sigy = 1.0/(1 + math.exp(-y))
@@ -233,4 +234,4 @@ dX = W.T.dot(dD)
 **_tips_**
 *calculus
 *algebra
-*geometry 
+*geometry

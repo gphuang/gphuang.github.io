@@ -2,6 +2,7 @@
 layout:       post
 title:        "Notes on Speech and Language Processing"
 author:       "GP Huang"
+date:   2016-11-19 23:00:00
 ---
 
 A quick review of related concepts.
@@ -109,11 +110,11 @@ $$
  - discriminative models
  - parsing-based models
  - caching models
- 
+
 ### Difficulties
 Ok, it seems all you need is some text to build a LM, i.e. with count priors. But ALAS, the problem starts here, how do you handle/represent words? more specifically,
 
-- where do you get the text data? 
+- where do you get the text data?
 - how much text data do you get?
 - how reliable is the distribution of (word) tokens in the text data?
 - are there any shorcomings of the LM?
@@ -122,8 +123,8 @@ Ok, it seems all you need is some text to build a LM, i.e. with count priors. Bu
 
 These questions relate to the quality and quantity of data ressources that are often at the root of the problem.
 That is to assume you have acquired at lease certain amount of wealth and human labor to collect the text data, or the scientific community at large have created a pool of shared resources, e.g. speech and text corpus, n-grams on certain languages.
-Luckily, there are many such resources available, thanks to the recent popularity of Big Data. 
-For example, you can have a look at [Google's Ngram Viewer](https://books.google.com/ngrams). Type in a word, and see how its usage has varied in history! 
+Luckily, there are many such resources available, thanks to the recent popularity of Big Data.
+For example, you can have a look at [Google's Ngram Viewer](https://books.google.com/ngrams). Type in a word, and see how its usage has varied in history!
 
 Here are the two main difficulties, data sparsity and OOV, arising from the text data, they are somehow co-related, where the latter is much more specific and is often a direct threat for speech recognition and language understanding tasks.
 
@@ -139,7 +140,7 @@ induce word representations from unlabeled text
 - HMM-based representations
 - NN-based representations
 
- 
+
 ### Current Trends
 
 <a name='nnlm'></a>
@@ -151,9 +152,14 @@ The NN learns the embeddings of words, where all words are represented with D-di
 - less data sparsity
 - OOV words have non-zero probabilites
 
+Document as vectors 
+
+
 <a name='bench'></a>
 
 ### Benchmarking Test on English PTB
+
+
 
 ## Further Reading
 
