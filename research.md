@@ -10,13 +10,3 @@ The purpose of this page is to outline the main topics on which I publish my res
 ## Publications
 
 ### An Investigation into LM Data Augmentation for Low-resourced ASR And KWS
-
-[[pdf]](/papers/2017_ICASSP_LIMSI/huang2017investigation.pdf)  [[bib]](/papers/2017_ICASSP_LIMSI/huang2017investigation.bib) ICASSP 2017
-
-<div class="imgcap">
-<div>
-<img src="/images/huang2017investigation.png" style="max-width:60%;  text-align:justify;">
-</div>
-<div class="thecap">Figure: Evaluate LM perplexity on Babel low-resourced languages.
-</div>
-</div>
