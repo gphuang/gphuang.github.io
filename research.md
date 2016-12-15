@@ -3,12 +3,20 @@ layout: page
 permalink: /research/
 ---
 
-I am Guangpu, a research scientist working on human language technologies.
+My research experience started with a project during my final year at University, to design a software system to help student to speak standard English.
+From there it has been an enriching journey in human language technologies, especially on pronunciation modeling and language modeling.
+The purpose of this page is to outline the main topics on which I publish my research results.
 
-My research focuses on studying the parallelism between the human speech production and perception processes to improve the performance of computer based systems.  
-I apply the production and perception features in challenging tasks, such as speech inversion, speech recognition, text data augmentation, and language understanding.
+## Publications
 
-On a side enjoy traveling, jogging, drawing, and trying to maintain an active Github account.
+#### An Investigation into LM Data Augmentation for Low-resourced ASR And KWS
 
-## Contact me
-guangpu dot huang at tut dot fi
+[[pdf]](/papers/2017_ICASSP_LIMSI/huang2017investigation.pdf)  [[bib]](/papers/2017_ICASSP_LIMSI/huang2017investigation.bib) ICASSP 2017
+
+<div class="imgcap">
+<div>
+<img src="/images/huang2017investigation.png" style="max-width:60%;  text-align:justify;">
+</div>
+<div class="thecap">Figure: Evaluate LM perplexity on Babel low-resourced languages.
+</div>
+</div>
