@@ -3,7 +3,7 @@ layout: page
 permalink: /research/
 ---
 
-## Motivations
+Motivations
 
   * to analyze speech/sounds with respect to articulatory and auditory cues.
 
