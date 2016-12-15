@@ -3,8 +3,6 @@ layout: page
 permalink: /research/
 ---
 
-[//]: #  todo: personal page, pdf files.
-
 ## Motivations
 
   * to analyze speech/sounds with respect to articulatory and auditory cues.
@@ -12,6 +10,18 @@ permalink: /research/
   * to imitate the dual-process of human speech production and perception.
 
   * to develop intelligent computer systems capable of understanding natural language.
+
+## Experiences
+
+  **2016 - present** Post-doc: Acoustic Events Analysis
+
+  **2015 - 2016** Post-doc: Babel - Text Data Augmentation via Statistical Machine Translation and RNNLMs (Cantonese, English)
+
+  **2012 - 2015** Post-doc: Speech Segmentation with Multi-View Features (Malay, English)
+
+  **2008 - 2012** Doctoral: Automatic Speech Recognition with Articulatory Phonetic Features (English)
+
+  **2004 - 2008** Bachelor: Digital Signal Processing: Audio/Image/Video; Information Theory; Literature Studies
 
 ## Publications
 
@@ -83,18 +93,6 @@ The retrieved articulatory trajectories and the acoustic features are then used 
   * [Academic Page]() (note: I will try to upload the preprints to my new webpage, and the scripts to github in the near future.)
 
   * [Google Scholar](https://scholar.google.fr/citations?user=hrICCP0AAAAJ&hl=en)
-
-## Experiences
-
-**2016 - present** Post-doc: Acoustic Events Analysis
-
-**2015 - 2016** Post-doc: Babel - Text Data Augmentation (Cantonese, English)
-
-**2012 - 2015** Post-doc: Speech Segmentation with Multi-View Features (Malay, English)
-
-**2008 - 2012** Doctoral: Automatic Speech Recognition with Articulatory Phonetic Features (English)
-
-**2004 - 2008** Bachelor: Digital Signal Processing: Audio/Image/Video; Information Theory; Literature Studies
 
 ## Teaching
 
