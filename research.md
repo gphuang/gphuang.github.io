@@ -5,13 +5,13 @@ permalink: /research/
 
 [//]: #  todo: personal page, pdf files.
 
-### Motivations
+## Motivations
 
   * to analyze speech/sounds with respect to articulatory and auditory cues.
   * to imitate the dual-process of human speech production and perception.
   * to develop intelligent computer systems capable of understanding natural language.
 
-### Publications
+## Publications
 
 #### An Investigation into LM Data Augmentation for Low-resourced ASR And KWS
 
@@ -82,7 +82,7 @@ The retrieved articulatory trajectories and the acoustic features are then used 
 
   * [Google Scholar](https://scholar.google.fr/citations?user=hrICCP0AAAAJ&hl=en)
 
-### Experiences
+## Experiences
 
 **2016 - present** Post-doc: Acoustic Events Analysis
 
@@ -94,7 +94,7 @@ The retrieved articulatory trajectories and the acoustic features are then used 
 
 **2004 - 2008** Bachelor: Digital Signal Processing: Audio/Image/Video; Information Theory; Literature Studies
 
-### Teaching
+## Teaching
 
 #### Spring/Fall 2009-2010
 
