@@ -164,7 +164,6 @@ term frequency weighting
 ### Benchmarking Test on English PTB
 
 
-
 ## Further Reading
 
   * [Data Sparsity in NLP](http://cogcomp.cs.illinois.edu/files/presentations/BGU_WordRepresentations_2009.pdf)
