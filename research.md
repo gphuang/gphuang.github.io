@@ -12,7 +12,7 @@ permalink: /research/
 
 ### Publications
 
-#### 1. Investigate LM Data Augmentation for Low-resourced Languages ASR And KWS
+#### An Investigation into LM Data Augmentation for Low-resourced ASR And KWS
 
 [[pdf]](/papers/2017_ICASSP_LIMSI/huang2017investigation.pdf)  [[bib]](/papers/2017_ICASSP_LIMSI/huang2017investigation.bib) ICASSP 2017
 
@@ -33,7 +33,7 @@ I train various RNN-LMs using word and subword units, which then generate artifi
 Word-based RNNs keep the same vocabulary so do not impact the OOV, whereas subword units can reduce the OOV rate.
 In particular, LMs including text data generated with RNNLMs improve ASR and KWS results on several low-resourced languages, such as Cantonese, Mongolian, Igbo, and Amharic.
 
-#### 2. Machine Translation Based Data Augmentation For Cantonese Keyword Spotting
+#### Machine Translation Based Data Augmentation For Cantonese Keyword Spotting
 
 [[pdf]](/papers/2016_ICASSP_LIMSI/huang2016machine.pdf)  [[bib]](/papers/2016_ICASSP_LIMSI/huang2016machine.bib) ICASSP 2016
 
@@ -48,21 +48,23 @@ In particular, LMs including text data generated with RNNLMs improve ASR and KWS
 
 In this work, the machine translation model is trained on a corpus of parallel Mandarin-Cantonese subtitles and used to translate a large set of Mandarin conversational telephone transcripts to Cantonese, which has limited resources. The translated transcripts are used to train a more robust language model for speech recognition  and  for keyword  search  in  Cantonese  conversational  telephone  speech. This  method  enables  the  keyword  search  system  to  detect 1.5 times more out-of-vocabulary words,  and achieve 1.7% absolute improvement on actual term-weighted value.
 
-#### 3. Retrieve Articulatory Phonetic Features for Speech Recognition
+#### An Adaptive Neural Control Scheme For Articulatory Synthesis Of CV Sequences
 
 [[pdf]](/papers/2014_CSL/huang2014adaptive.pdf) [[bib]](/papers/2014_CSL/huang2014adaptive.bib) Computer Speech and Language 2014
 
+Reproducing the smooth vocal tract trajectories is critical for high quality articulatory speech synthesis. This paper presents an adaptive neural control scheme for such a task using fuzzy logic and neural networks.  The control scheme estimates motor commands from trajectories of flesh-points on selected articulators. These motor commands are then used to reproduce the trajectories of the underlying articulators in a 2nd order dynamical system. Initial experiments show that the control scheme is able to manipulate the mass-spring based elastic tract walls in a 2-dimensional articulatory synthesizer and to realize efficient speech motor control. The proposed controller achieves high accuracy during on-line tracking of the lips, the tongue, and the jaw in the simulation of consonant-vowel sequences. It also offers salient features such as generality and adaptability for future developments of control models in articulatory synthesis.
+
+#### Articulatory Phonetic Features for Speech Recognition
+
 [[pdf]](/papers/2012_THESIS/huang2012articulatory.pdf) [[bib]](/papers/2012_THESIS/huang2012articulatory.bib) Ph.D. Thesis 2012
 
-<p align="center">
-  <div class="imgcap">
-  Â<div>
-  <img src="/images/huang2012articulatory.png" style="max-width:50%;  text-align:justify;">
-  </div>
-  <div class="thecap">Figure: The pallet positions for articulatory representations in a 2-D bio-mechanical model of human vocal tract.
-  </div>
-  </div>
-</p>
+<div class="imgcap">
+<div>
+<img src="/images/huang2012articulatory.png" style="max-width:50%;  text-align:justify;">
+</div>
+<div class="thecap">Figure: The pallet positions for articulatory representations in a 2-D bio-mechanical model of human vocal tract.
+</div>
+</div>
 
 Acoustic-to-articulatory mapping is a challenging topic in speech research.
 Due to the nature of recording conditions, the articulatory data are less abundant than the acoustic data, thus they are usually retrieved or inverted from the latter.
