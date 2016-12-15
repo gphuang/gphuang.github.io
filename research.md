@@ -10,20 +10,18 @@ permalink: /research/
   * to imitate the dual-process of human speech production and perception.
   * to develop intelligent computer systems capable of understanding natural language.
 
-  * [Academic Page]() (note: I will try to upload the preprints to my new webpage, and the scripts to github in the near future.)
+#### An Investigation into LM Data Augmentation For Low-resourced ASR And KWS
 
-  * [Google Scholar](https://scholar.google.fr/citations?user=hrICCP0AAAAJ&hl=en)
-
-### An Investigation into LM Data Augmentation For Low-resourced ASR And KWS
+[[pdf]](/papers/2017_ICASSP_LIMSI/huang2017investigation.pdf)  [[bib]](/papers/2017_ICASSP_LIMSI/huang2017investigation.bib) ICASSP 2017
 
 <div class="imgcap">
 <div>
 <img src="/images/huang2017investigation.png" style="max-width:100%;  text-align:center;">
 </div>
-<div class="thecap">LM Perplexity Evaludation on Babel Low-resourced Languages.</div>
+<div class="thecap">LM Perplexity Evaludation on Babel Low-resourced Languages.
+</div>
 </div>
 
-[PDF](/papers/2017_ICASSP_LIMSI/huang2017investigation.pdf) [bib](/papers/2017_ICASSP_LIMSI/huang2017investigation.bib) ICASSP 2017
 
 The linguistic regularities in the text data can be captured by recurrent neural networks (RNNs), which represent words by vectors, i.e., the input-layer weights.
 Taking advantage of the continuous-space word vectors, RNN based Language Models (LMs) have gained much momentum in the past few years.
@@ -34,23 +32,26 @@ I train various RNN-LMs using word and subword units, which then generate artifi
 Word-based RNNs keep the same vocabulary so do not impact the OOV, whereas subword units can reduce the OOV rate.
 In particular, LMs including text data generated with RNNLMs improve ASR and KWS results on several low-resourced languages, such as Cantonese, Mongolian, Igbo, and Amharic.
 
-### Machine Translation Based Data Augmentation For Cantonese Keyword Spotting
+#### Machine Translation Based Data Augmentation For Cantonese Keyword Spotting
+
+[[pdf]](/papers/2016_ICASSP_LIMSI/huang2016machine.pdf)  [[bib]](/papers/2016_ICASSP_LIMSI/huang2016machine.bib) ICASSP 2016
 
 <div class="imgcap">
 <div>
 <img src="/assets/smt/SubtitleExample1_english.png" style="max-width:55%;  text-align:center;">
 <img src="/assets/smt/HUB5m2cExample2_english.png" style="max-width:65%; text-align:center;">
 </div>
-<div class="thecap">Upper: Moses learns to align parallel Mandarin-Cantonese subtitles and generate a phrase-table. Small corpus of TVB shows (Ref). Lower: Moses translates Mandarin conversation to Cantonese. Not perfect but introduces new words, also notice the word orders.</div>
+<div class="thecap">Upper: Moses learns to align parallel Mandarin-Cantonese subtitles and generate a phrase-table. Small corpus of TVB shows (Ref). Lower: Moses translates Mandarin conversation to Cantonese. Not perfect but introduces new words, also notice the word orders.
 </div>
-
-[[PDF|/papers/2016_ICASSP_LIMSI/huang2016machine.pdf]]
-
-[[bib|/papers/2016_ICASSP_LIMSI/huang2016machine.bib]] ICASSP 2016
+</div>
 
 This paper presents a method to improve a language model for a limited-resourced language using statistical machine translation from a related language to generate data for the target language. In this work, the machine translation model is trained on a corpus of parallel Mandarin-Cantonese subtitles and used to translate a large set of Mandarin conversational telephone transcripts to Cantonese, which has limited resources. The translated transcripts are used to train a more robust language model for speech recognition  and  for keyword  search  in  Cantonese  conversational  telephone  speech.This  method  enables  the  keyword  search  system  to  detect 1.5 times more out-of-vocabulary words,  and achieve 1.7% absolute improvement on actual term-weighted value.
 
 ### Articulatory Phonetic Features for Speech Recognition
+
+[[pdf]](/papers/2014_CSL/huang2014adaptive.pdf) [[bib]](/papers/2014_CSL/huang2014adaptive.bib) Computer Speech and Language 2014
+
+[[pdf]](/papers/2012_THESIS/huang2012articulatory.pdf) [[bib]](/papers/2012_THESIS/huang2012articulatory.bib) Ph.D. Thesis 2012
 
 Acoustic-to-articulatory mapping is a challenging topic in speech research.
 Due to the nature of recording conditions, the articulatory data are less abundant than the acoustic data, thus they are usually retrieved or inverted from the latter.
@@ -62,11 +63,10 @@ I apply DNN to predict the articulatory trajectories from the acoustic features,
 Using a 2-hidden layer DNN, I obtain an average root mean square error below 1 mm on the EMA measures of selected articulator positions: upper/lower lips, lower incisor, tongue tip, tongue body, and tongue dorsum, on the multi-channel articulatory corpus, MOCHA-TIMIT.
 The retrieved articulatory trajectories and the acoustic features are then used together at the phonetic level to improve the ASR performance on TIMIT data.
 
-[pdf] [bib] Thesis 2012
+### More on
+  * [Academic Page]() (note: I will try to upload the preprints to my new webpage, and the scripts to github in the near future.)
 
-[pdf] [bib] Computer Speech and Language Volume 28, pp. 163-176, 2014.
-
-[pdf] [bib] ASRU 2011
+  * [Google Scholar](https://scholar.google.fr/citations?user=hrICCP0AAAAJ&hl=en)
 
 ## Experiences
 
