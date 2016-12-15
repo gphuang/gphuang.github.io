@@ -8,7 +8,7 @@ My research experience started with a project during my final year at University
 From there it has been an enriching journey in human language technologies, especially on pronunciation modeling and language modeling.
 The purpose of this page is to outline the main topics on which I publish my research results.
 
-## Publications
+## Topics 
 
 #### An Investigation into LM Data Augmentation for Low-resourced ASR And KWS
 
@@ -46,7 +46,7 @@ In particular, LMs including text data generated with RNNLMs improve ASR and KWS
 
 In this work, the machine translation model is trained on a corpus of parallel Mandarin-Cantonese subtitles and used to translate a large set of Mandarin conversational telephone transcripts to Cantonese, which has limited resources. The translated transcripts are used to train a more robust language model for speech recognition  and  for keyword  search  in  Cantonese  conversational  telephone  speech. This  method  enables  the  keyword  search  system  to  detect 1.5 times more out-of-vocabulary words,  and achieve 1.7% absolute improvement on actual term-weighted value.
 
-#### An Adaptive Neural Control Scheme For Articulatory Synthesis Of CV Sequences
+#### An Adaptive Neural Control Scheme For Articulatory Synthesis of CV Sequences
 
 [[pdf]](/papers/2014_CSL/huang2014adaptive.pdf) [[bib]](/papers/2014_CSL/huang2014adaptive.bib) Computer Speech and Language 2014
 
