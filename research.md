@@ -12,11 +12,11 @@ permalink: /research/
 
 ## Publications
 
-* [Academic Page] (note: I will try to upload the preprints to my new webpage, and the scripts to github in the near future.)
+* [Academic Page]() (note: I will try to upload the preprints to my new webpage, and the scripts to github in the near future.)
 
 * [Google Scholar](https://scholar.google.fr/citations?user=hrICCP0AAAAJ&hl=en)
 
-### Text Data Augmentation for Babel Under-Resourced Languages
+### An Investigation Into Language Model Data Augmentation For Low-resourced ASR And KWS
 
 The linguistic regularities in the text data can be captured by recurrent neural networks (RNNs), which represent words by vectors, i.e., the input-layer weights.
 Taking advantage of the continuous-space word vectors, RNN based Language Models (LMs) have gained much momentum in the past few years.
@@ -27,7 +27,7 @@ I train various RNN-LMs using word and subword units, which then generate artifi
 Word-based RNNs keep the same vocabulary so do not impact the OOV, whereas subword units can reduce the OOV rate.
 In particular, LMs including text data generated with RNNLMs improve ASR and KWS results on several low-resourced languages, such as Cantonese, Mongolian, Igbo, and Amharic.
 
-[PDF] [BibTex] ICASSP 2016
+[[PDF|/papers/2017_ICASSP_LIMSI/huang2017investigation.pdf]] [[bib|/papers/2017_ICASSP_LIMSI/huang2017investigation.bib]] ICASSP 2017
 
 ### Machine Translation Based Data Augmentation For Cantonese Keyword Spotting
 
@@ -41,7 +41,7 @@ In particular, LMs including text data generated with RNNLMs improve ASR and KWS
 
 This paper presents a method to improve a language model for a limited-resourced language using statistical machine translation from a related language to generate data for the target language. In this work, the machine translation model is trained on a corpus of parallel Mandarin-Cantonese subtitles and used to translate a large set of Mandarin conversational telephone transcripts to Cantonese, which has limited resources. The translated transcripts are used to train a more robust language model for speech recognition  and  for keyword  search  in  Cantonese  conversational  telephone  speech.This  method  enables  the  keyword  search  system  to  detect 1.5 times more out-of-vocabulary words,  and achieve 1.7% absolute improvement on actual term-weighted value.
 
-[PDF] [BibTex] ICASSP 2016
+[PDF] [bib] ICASSP 2016
 
 ### Articulatory Phonetic Features for Speech Recognition
 
@@ -55,13 +55,11 @@ I apply DNN to predict the articulatory trajectories from the acoustic features,
 Using a 2-hidden layer DNN, I obtain an average root mean square error below 1 mm on the EMA measures of selected articulator positions: upper/lower lips, lower incisor, tongue tip, tongue body, and tongue dorsum, on the multi-channel articulatory corpus, MOCHA-TIMIT.
 The retrieved articulatory trajectories and the acoustic features are then used together at the phonetic level to improve the ASR performance on TIMIT data.
 
-[pdf] [BibText] Thesis 2013
+[pdf] [bib] Thesis 2012
 
-[pdf] [BibTex] Computer Speech and Language Volume 28, pp. 163-176, 2014.
+[pdf] [bib] Computer Speech and Language Volume 28, pp. 163-176, 2014.
 
-[pdf] [BibText] ASRU 2011
-
-[pdf] [BibText] IJCNN 2010
+[pdf] [bib] ASRU 2011
 
 ## Experiences
 

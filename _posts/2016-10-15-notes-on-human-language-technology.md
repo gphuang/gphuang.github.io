@@ -121,7 +121,7 @@ Ok, it seems all you need is some text to build a LM, i.e. with count priors. Bu
 - are there enough training examples for the words _seen_?
 - for _unseen_ words, can try _part of speech abstraction_, _prefixes/suffixes abstraction_
 
-These questions relate to the quality and quantity of data ressources that are often at the root of the problem.
+These questions relate to the quality and quantity of data resources that are often at the root of the problem.
 That is to assume you have acquired at lease certain amount of wealth and human labor to collect the text data, or the scientific community at large have created a pool of shared resources, e.g. speech and text corpus, n-grams on certain languages.
 Luckily, there are many such resources available, thanks to the recent popularity of Big Data.
 For example, you can have a look at [Google's Ngram Viewer](https://books.google.com/ngrams). Type in a word, and see how its usage has varied in history!
@@ -152,7 +152,10 @@ The NN learns the embeddings of words, where all words are represented with D-di
 - less data sparsity
 - OOV words have non-zero probabilites
 
-Document as vectors 
+Document as vectors
+
+- distance as a bad idea
+- use angle instead of distance
 
 
 <a name='bench'></a>
