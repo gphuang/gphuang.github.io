@@ -5,18 +5,16 @@ permalink: /research/
 
 [//]: #  todo: personal page, pdf files.
 
-## Motivations
-  * to analyze speech/sounds with respect to articulatory and auditory cues.
-  * to imitate the dual-process of human speech production and perception.
-  * to develop intelligent computer systems capable of understanding natural language.
-
-## Publications
-
 * [Academic Page]() (note: I will try to upload the preprints to my new webpage, and the scripts to github in the near future.)
 
 * [Google Scholar](https://scholar.google.fr/citations?user=hrICCP0AAAAJ&hl=en)
 
-### An Investigation Into Language Model Data Augmentation For Low-resourced ASR And KWS
+### Motivations
+  * to analyze speech/sounds with respect to articulatory and auditory cues.
+  * to imitate the dual-process of human speech production and perception.
+  * to develop intelligent computer systems capable of understanding natural language.
+
+### An Investigation into LM Data Augmentation For Low-resourced ASR And KWS
 
 <div class="imgcap">
 <div>
