@@ -7,7 +7,7 @@ My research experience started with a project during my final year at University
 From there it has been an enriching journey in human language technologies, especially on pronunciation modeling and language modeling.
 The purpose of this page is to outline the main topics on which I publish my research results.
 
-## Publications
+## Selected Publications
 
 #### An Investigation into LM Data Augmentation for Low-resourced ASR And KWS
 
