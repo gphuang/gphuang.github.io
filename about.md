@@ -3,8 +3,6 @@ layout: page
 permalink: /about/
 ---
 
-## about me 
-
 I am Guangpu, a research scientist working on human language technologies.
 
 My research focuses on studying the parallelism between the human speech production and perception processes to improve the performance of computer based systems.  
