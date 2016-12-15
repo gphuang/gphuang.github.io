@@ -5,14 +5,14 @@ permalink: /research/
 
 [//]: #  todo: personal page, pdf files.
 
-* [Academic Page]() (note: I will try to upload the preprints to my new webpage, and the scripts to github in the near future.)
-
-* [Google Scholar](https://scholar.google.fr/citations?user=hrICCP0AAAAJ&hl=en)
-
 ### Motivations
   * to analyze speech/sounds with respect to articulatory and auditory cues.
   * to imitate the dual-process of human speech production and perception.
   * to develop intelligent computer systems capable of understanding natural language.
+
+  * [Academic Page]() (note: I will try to upload the preprints to my new webpage, and the scripts to github in the near future.)
+
+  * [Google Scholar](https://scholar.google.fr/citations?user=hrICCP0AAAAJ&hl=en)
 
 ### An Investigation into LM Data Augmentation For Low-resourced ASR And KWS
 
@@ -23,7 +23,7 @@ permalink: /research/
 <div class="thecap">LM Perplexity Evaludation on Babel Low-resourced Languages.</div>
 </div>
 
-[[PDF|/papers/2017_ICASSP_LIMSI/huang2017investigation.pdf]] [[bib|/papers/2017_ICASSP_LIMSI/huang2017investigation.bib]] ICASSP 2017
+[PDF](/papers/2017_ICASSP_LIMSI/huang2017investigation.pdf) [bib](/papers/2017_ICASSP_LIMSI/huang2017investigation.bib) ICASSP 2017
 
 The linguistic regularities in the text data can be captured by recurrent neural networks (RNNs), which represent words by vectors, i.e., the input-layer weights.
 Taking advantage of the continuous-space word vectors, RNN based Language Models (LMs) have gained much momentum in the past few years.
