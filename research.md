@@ -11,13 +11,14 @@ permalink: /research/
   * to develop intelligent computer systems capable of understanding natural language.
 
 ### Topics
+
 #### An Investigation into LM Data Augmentation For Low-resourced ASR And KWS
 
 [[pdf]](/papers/2017_ICASSP_LIMSI/huang2017investigation.pdf)  [[bib]](/papers/2017_ICASSP_LIMSI/huang2017investigation.bib) ICASSP 2017
 
 <div class="imgcap">
 <div>
-<img src="/images/huang2017investigation.png" style="max-width:100%;  text-align:center;">
+<img src="/images/huang2017investigation.png" style="max-width:60%;  text-align:center;">
 </div>
 <div class="thecap">Figure: Evaluate LM perplexity on Babel low-resourced languages.
 </div>
