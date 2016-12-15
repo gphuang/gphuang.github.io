@@ -10,6 +10,7 @@ permalink: /research/
   * to imitate the dual-process of human speech production and perception.
   * to develop intelligent computer systems capable of understanding natural language.
 
+### Topics
 #### An Investigation into LM Data Augmentation For Low-resourced ASR And KWS
 
 [[pdf]](/papers/2017_ICASSP_LIMSI/huang2017investigation.pdf)  [[bib]](/papers/2017_ICASSP_LIMSI/huang2017investigation.bib) ICASSP 2017
@@ -18,10 +19,9 @@ permalink: /research/
 <div>
 <img src="/images/huang2017investigation.png" style="max-width:100%;  text-align:center;">
 </div>
-<div class="thecap">LM Perplexity Evaludation on Babel Low-resourced Languages.
+<div class="thecap">Figure: Evaluate LM perplexity on Babel low-resourced languages.
 </div>
 </div>
-
 
 The linguistic regularities in the text data can be captured by recurrent neural networks (RNNs), which represent words by vectors, i.e., the input-layer weights.
 Taking advantage of the continuous-space word vectors, RNN based Language Models (LMs) have gained much momentum in the past few years.
@@ -41,7 +41,7 @@ In particular, LMs including text data generated with RNNLMs improve ASR and KWS
 <img src="/assets/smt/SubtitleExample1_english.png" style="max-width:55%;  text-align:center;">
 <img src="/assets/smt/HUB5m2cExample2_english.png" style="max-width:65%; text-align:center;">
 </div>
-<div class="thecap">Upper: Moses learns to align parallel Mandarin-Cantonese subtitles and generate a phrase-table. Small corpus of TVB shows (Ref). Lower: Moses translates Mandarin conversation to Cantonese. Not perfect but introduces new words, also notice the word orders.
+<div class="thecap">Figure Upper: Moses learns to align parallel Mandarin-Cantonese subtitles and generate a phrase-table. Small corpus of TVB shows (Ref). Lower: Moses translates Mandarin conversation to Cantonese. Not perfect but introduces new words, also notice the word orders.
 </div>
 </div>
 
@@ -52,6 +52,14 @@ This paper presents a method to improve a language model for a limited-resourced
 [[pdf]](/papers/2014_CSL/huang2014adaptive.pdf) [[bib]](/papers/2014_CSL/huang2014adaptive.bib) Computer Speech and Language 2014
 
 [[pdf]](/papers/2012_THESIS/huang2012articulatory.pdf) [[bib]](/papers/2012_THESIS/huang2012articulatory.bib) Ph.D. Thesis 2012
+
+<div class="imgcap">
+<div>
+<img src="/images/huang2012articulatory.png" style="max-width:100%;  text-align:center;">
+</div>
+<div class="thecap">Figure: The pallet positions for articulatory representations in a 2-D bio-mechanical model of human vocal tract.
+</div>
+</div>
 
 Acoustic-to-articulatory mapping is a challenging topic in speech research.
 Due to the nature of recording conditions, the articulatory data are less abundant than the acoustic data, thus they are usually retrieved or inverted from the latter.
