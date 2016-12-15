@@ -150,13 +150,14 @@ induce word representations from unlabeled text
 The NN learns the embeddings of words, where all words are represented with D-dimensional vectors
 
 - less data sparsity
-- OOV words have non-zero probabilites
+- OOV words have non-zero probabilities
 
 Document as vectors
 
 - distance as a bad idea
 - use angle instead of distance
 
+term frequency weighting
 
 <a name='bench'></a>
 

@@ -18,6 +18,15 @@ permalink: /research/
 
 ### An Investigation Into Language Model Data Augmentation For Low-resourced ASR And KWS
 
+<div class="imgcap">
+<div>
+<img src="/images/huang2017investigation.png" style="max-width:100%;  text-align:center;">
+</div>
+<div class="thecap">LM Perplexity Evaludation on Babel Low-resourced Languages.</div>
+</div>
+
+[[PDF|/papers/2017_ICASSP_LIMSI/huang2017investigation.pdf]] [[bib|/papers/2017_ICASSP_LIMSI/huang2017investigation.bib]] ICASSP 2017
+
 The linguistic regularities in the text data can be captured by recurrent neural networks (RNNs), which represent words by vectors, i.e., the input-layer weights.
 Taking advantage of the continuous-space word vectors, RNN based Language Models (LMs) have gained much momentum in the past few years.
 Compared with n-grams, the RNN-LMs provide better vocabulary coverage and reduce data sparsity.
@@ -26,8 +35,6 @@ This is especially useful when dealing with out-of-vocabulary (OOV) words in ASR
 I train various RNN-LMs using word and subword units, which then generate artificial text data to optimize the performance of LMs for ASR and keyword search (KWS) tasks.
 Word-based RNNs keep the same vocabulary so do not impact the OOV, whereas subword units can reduce the OOV rate.
 In particular, LMs including text data generated with RNNLMs improve ASR and KWS results on several low-resourced languages, such as Cantonese, Mongolian, Igbo, and Amharic.
-
-[[PDF|/papers/2017_ICASSP_LIMSI/huang2017investigation.pdf]] [[bib|/papers/2017_ICASSP_LIMSI/huang2017investigation.bib]] ICASSP 2017
 
 ### Machine Translation Based Data Augmentation For Cantonese Keyword Spotting
 
@@ -39,9 +46,11 @@ In particular, LMs including text data generated with RNNLMs improve ASR and KWS
 <div class="thecap">Upper: Moses learns to align parallel Mandarin-Cantonese subtitles and generate a phrase-table. Small corpus of TVB shows (Ref). Lower: Moses translates Mandarin conversation to Cantonese. Not perfect but introduces new words, also notice the word orders.</div>
 </div>
 
-This paper presents a method to improve a language model for a limited-resourced language using statistical machine translation from a related language to generate data for the target language. In this work, the machine translation model is trained on a corpus of parallel Mandarin-Cantonese subtitles and used to translate a large set of Mandarin conversational telephone transcripts to Cantonese, which has limited resources. The translated transcripts are used to train a more robust language model for speech recognition  and  for keyword  search  in  Cantonese  conversational  telephone  speech.This  method  enables  the  keyword  search  system  to  detect 1.5 times more out-of-vocabulary words,  and achieve 1.7% absolute improvement on actual term-weighted value.
+[[PDF|/papers/2016_ICASSP_LIMSI/huang2016machine.pdf]]
 
-[PDF] [bib] ICASSP 2016
+[[bib|/papers/2016_ICASSP_LIMSI/huang2016machine.bib]] ICASSP 2016
+
+This paper presents a method to improve a language model for a limited-resourced language using statistical machine translation from a related language to generate data for the target language. In this work, the machine translation model is trained on a corpus of parallel Mandarin-Cantonese subtitles and used to translate a large set of Mandarin conversational telephone transcripts to Cantonese, which has limited resources. The translated transcripts are used to train a more robust language model for speech recognition  and  for keyword  search  in  Cantonese  conversational  telephone  speech.This  method  enables  the  keyword  search  system  to  detect 1.5 times more out-of-vocabulary words,  and achieve 1.7% absolute improvement on actual term-weighted value.
 
 ### Articulatory Phonetic Features for Speech Recognition
 
