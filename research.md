@@ -9,7 +9,7 @@ The purpose of this page is to outline the main topics on which I publish my res
 
 ## Publications
 
-#### An Investigation into LM Data Augmentation for Low-resourced ASR And KWS
+### An Investigation into LM Data Augmentation for Low-resourced ASR And KWS
 
 [[pdf]](/papers/2017_ICASSP_LIMSI/huang2017investigation.pdf)  [[bib]](/papers/2017_ICASSP_LIMSI/huang2017investigation.bib) ICASSP 2017
 
