@@ -4,7 +4,7 @@ title:  "Research"
 permalink: /research/
 ---
 
-My research experience started with a project during my final year at University, to design a software system to help student to speak standard English.
+It all started with a project during my final year at University, to design a software system to help student to speak standard English.
 From there it has been an enriching journey in human language technologies, especially on pronunciation modeling and language modeling.
 The purpose of this page is to outline the main topics on which I publish my research results.
 
@@ -26,10 +26,11 @@ The purpose of this page is to outline the main topics on which I publish my res
 Taking advantage of the continuous-space word vectors, RNN based Language Models (LMs) have gained much momentum in the past few years.
 Compared with n-grams, the RNN-LMs provide better vocabulary coverage and reduce data sparsity.
 This is especially useful when dealing with out-of-vocabulary (OOV) words in ASR systems.
-
 I train various RNN-LMs using word and subword units, which then generate artificial text data to optimize the performance of LMs for ASR and keyword search (KWS) tasks.
 Word-based RNNs keep the same vocabulary so do not impact the OOV, whereas subword units can reduce the OOV rate.
 In particular, LMs including text data generated with RNNLMs improve ASR and KWS results on several low-resourced languages, such as Cantonese, Mongolian, Igbo, and Amharic.
+
+---
 
 #### Machine Translation Based Data Augmentation For Cantonese Keyword Spotting
 
@@ -46,11 +47,15 @@ In particular, LMs including text data generated with RNNLMs improve ASR and KWS
 
 **Abstract** In this work, the machine translation model is trained on a corpus of parallel Mandarin-Cantonese subtitles and used to translate a large set of Mandarin conversational telephone transcripts to Cantonese, which has limited resources. The translated transcripts are used to train a more robust language model for speech recognition  and  for keyword  search  in  Cantonese  conversational  telephone  speech. This  method  enables  the  keyword  search  system  to  detect 1.5 times more out-of-vocabulary words,  and achieve 1.7% absolute improvement on actual term-weighted value.
 
+---
+
 #### An Adaptive Neural Control Scheme For Articulatory Synthesis of CV Sequences
 
-[[pdf]](/papers/2014_CSL/huang2014adaptive.pdf) [[bib]](/papers/2014_CSL/huang2014adaptive.bib) Computer Speech and Language 2014
+[[pdf]](/papers/2014_CSL/huang2014adaptive.pdf) [[bib]](/papers/2014_CSL/huang2014adaptive.bib) CSL 2014
 
 **Abstract**  Reproducing the smooth vocal tract trajectories is critical for high quality articulatory speech synthesis. This paper presents an adaptive neural control scheme for such a task using fuzzy logic and neural networks.  The control scheme estimates motor commands from trajectories of flesh-points on selected articulators. These motor commands are then used to reproduce the trajectories of the underlying articulators in a 2nd order dynamical system. Initial experiments show that the control scheme is able to manipulate the mass-spring based elastic tract walls in a 2-dimensional articulatory synthesizer and to realize efficient speech motor control. The proposed controller achieves high accuracy during on-line tracking of the lips, the tongue, and the jaw in the simulation of consonant-vowel sequences. It also offers salient features such as generality and adaptability for future developments of control models in articulatory synthesis.
+
+---
 
 #### Articulatory Phonetic Features for Speech Recognition
 
@@ -71,6 +76,8 @@ I use the muscular control signal to constrain the number of articulatory config
 I apply DNN to predict the articulatory trajectories from the acoustic features, e.g., MFCCs.
 Using a 2-hidden layer DNN, I obtain an average root mean square error below 1 mm on the EMA measures of selected articulator positions: upper/lower lips, lower incisor, tongue tip, tongue body, and tongue dorsum, on the multi-channel articulatory corpus, MOCHA-TIMIT.
 The retrieved articulatory trajectories and the acoustic features are then used together at the phonetic level to improve the ASR performance on TIMIT data.
+
+---
 
 #### More on
 
