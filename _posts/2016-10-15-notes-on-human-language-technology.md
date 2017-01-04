@@ -117,7 +117,7 @@ Ok, it seems all you need is some text to build a LM, i.e. with count priors. Bu
 - where do you get the text data?
 - how much text data do you get?
 - how reliable is the distribution of (word) tokens in the text data?
-- are there any shorcomings of the LM?
+- are there any shortcomings of the LM?
 - are there enough training examples for the words _seen_?
 - for _unseen_ words, can try _part of speech abstraction_, _prefixes/suffixes abstraction_
 
@@ -160,6 +160,10 @@ Document as vectors
 term frequency weighting
 
 <a name='bench'></a>
+
+RNNLM
+
+character rnn language modelling, sample text from initial index/character
 
 ### Benchmarking Test on English PTB
 

@@ -206,7 +206,7 @@ Three core components of the (image) classification task:
 3 key components in (image) classification task:
 
 * 1. A (parameterized) score function maps the raw image pixels to class scores (e.g., a linear function $$f(x_i,W) = Wx_i$$)
-* 2. A loss function **L** measures the quality of a particulary set of parameters using certain scores (e.g., Softmax/SVM)
+* 2. A loss function **L** measures the quality of a particular set of parameters using certain scores (e.g., Softmax/SVM)
 * 3. An optimization function finds the set of parameters **W** that minimize the loss function
 
 
