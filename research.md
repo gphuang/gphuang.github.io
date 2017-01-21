@@ -10,6 +10,11 @@ The purpose of this page is to outline the main topics on which I publish my res
 
 ## Publications
 
+### Environmental Sound Events Detection
+
+**Abstract**
+to be filled
+
 #### An Investigation into LM Data Augmentation for Low-resourced ASR And KWS
 
 [[pdf]](/papers/2017_ICASSP_LIMSI/huang2017investigation.pdf)  [[bib]](/papers/2017_ICASSP_LIMSI/huang2017investigation.bib) ICASSP 2017
@@ -81,7 +86,7 @@ The retrieved articulatory trajectories and the acoustic features are then used 
 
 #### More on
 
-  - [Academic Page]() (note: I will try to upload the preprints to my new webpage, and the scripts to github in the near future.)
+  - [Academic Page](/http://www.cs.tut.fi/~huangg/)
 
   - [Google Scholar](https://scholar.google.fr/citations?user=hrICCP0AAAAJ&hl=en)
 
