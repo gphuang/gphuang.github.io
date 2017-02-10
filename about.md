@@ -3,7 +3,7 @@ layout: page
 permalink: /about/
 ---
 
-**Bio.** I am Guangpu, a research scientist working on human language technologies.
+A research scientist working human speech and language technologies.
 
 My research focuses on studying the parallelism between the human speech production and perception processes to improve the performance of computer based systems.  
 I apply the production and perception features in challenging tasks, such as speech inversion, speech recognition, text data augmentation, and language understanding.
