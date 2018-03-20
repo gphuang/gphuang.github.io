@@ -12,7 +12,7 @@ On a side enjoy traveling, jogging, drawing, and trying to maintain an active Gi
 
 ## More on
 
-  - [Academic Page]({{ site.baseurl }}http://www.cs.tut.fi/~huangg)
+  - [Academic Page http://www.cs.tut.fi/~huangg]
 
   - [Google Scholar](https://scholar.google.fr/citations?user=hrICCP0AAAAJ&hl=en)
 
