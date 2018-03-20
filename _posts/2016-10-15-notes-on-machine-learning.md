@@ -30,9 +30,13 @@ Table of Contents:
     - [Case Study](#CaseStudy)
   - [Convolutional Neural Networks](#CNN)
   - [Recurrent Neural Networks](#RNN)
-- [Application: Toy Example](#ToyExample)
-- [Application to Audio: Human Speech and Language Processing](#AppHSLP)
-- [Application to Vision: Image and Video Processing](#APPVIVP)
+- [ML Applications](#MLApplications)
+  - [Toy Example](#ToyExample)
+  - [Audio: Human Speech and Language Processing](#AppHSLP)
+  - [Vision: Image and Video Processing](#APPVIVP)
+- [ML Tools][#MLTools]
+  - [Tensorflow in a Nutshell: a Reading][#Tensorflow]
+
 - [Summary](#summary)
 
 <a name='Basics'></a>
@@ -571,17 +575,18 @@ def L_ivectorized(x, y, w):
   * A translation by the vector
   * Point-wise application of e.g., tanh.
 
+  <a name='MLApplications'></a>
+
+## ML Applications
 
 <a name='ToyExample'></a>
 
-## Toy Example
-
-###
+### Toy Example
 
 
 <a name='AppHSLP'></a>
 
-## Application to Audio: Human Speech and Language Processing
+### Audio: Human Speech and Language Processing
 
 polyphonic sound event detection in real life recordings
 
@@ -595,7 +600,18 @@ Given x, where x, and we want to compute/debug x.
 
 <a name='AppVIVP'></a>
 
-## Application to Vision: Image and Video Processing
+### Vision: Image and Video Processing
+
+<a name='MLTools'></a>
+
+## Tools for ML
+
+<a name='Tensorflow'></a>
+
+"if a human expert couldn’t use the data to solve the problem manually, a computer probably won’t be able to either.
+Instead, focus on problems where a human could solve the problem, but where it would be great if a computer could solve it much more quickly."
+
+### Tensorflow in a Nutshell: a Reading
 
 <a name='summary'></a>
 

@@ -10,5 +10,11 @@ I apply the production and perception features in challenging tasks, such as spe
 
 On a side enjoy traveling, jogging, drawing, and trying to maintain an active Github account.
 
+## More on
+
+  - [Academic Page](www.cs.tut.fi/~huangg/)
+
+  - [Google Scholar](https://scholar.google.fr/citations?user=hrICCP0AAAAJ&hl=en)
+
 ## Contact me
-guangpu dot huang at tut dot fi
+  guangpu dot huang at tut dot fi

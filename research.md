@@ -82,12 +82,6 @@ The retrieved articulatory trajectories and the acoustic features are then used 
 
 ---
 
-#### More on
-
-  - [Academic Page](/http://www.cs.tut.fi/~huangg/)
-
-  - [Google Scholar](https://scholar.google.fr/citations?user=hrICCP0AAAAJ&hl=en)
-
 ## Experiences
 
 **2016 - present** Post-doc: Acoustic Events Analysis
