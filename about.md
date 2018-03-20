@@ -13,8 +13,6 @@ On a side enjoy traveling, jogging, drawing, and trying to maintain an active Gi
 ## More on
 
   - [Academic Page http://www.cs.tut.fi/~huangg](http://www.cs.tut.fi/~huangg)
-  * [Justin Johnson, Stanford University](http://cs.stanford.edu/people/jcjohns/)
-
 
   - [Google Scholar](https://scholar.google.fr/citations?user=hrICCP0AAAAJ&hl=en)
 
