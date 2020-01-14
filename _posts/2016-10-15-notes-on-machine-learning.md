@@ -608,10 +608,12 @@ Given x, where x, and we want to compute/debug x.
 
 <a name='Tensorflow'></a>
 
-"if a human expert couldn’t use the data to solve the problem manually, a computer probably won’t be able to either.
+"If a human expert couldn’t use the data to solve the problem manually, a computer probably won’t be able to either.
 Instead, focus on problems where a human could solve the problem, but where it would be great if a computer could solve it much more quickly."
 
 ### Tensorflow in a Nutshell: a Reading
+
+
 
 <a name='summary'></a>
 
