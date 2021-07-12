@@ -10,7 +10,7 @@ I apply the production and perception features in challenging tasks, such as spe
 
 ## Social Media
 
-  - [Google Scholar](https://scholar.google.fr/citations?user=hrICCP0AAAAJ&hl=en)
+  - [Google Scholar](https://scholar.google.com/citations?user=ppsf-IAAAAAJ&hl=en)
 
   - [Linkedin](https://www.linkedin.com/in/gp-huang-793ba4194/)
 
