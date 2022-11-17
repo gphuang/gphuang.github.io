@@ -17,4 +17,12 @@ Speech inversion is also known as **acoustic-to-articulatory mapping**.
 
 ## So, how to do Speech Inversion:
 
+Researchers
+- https://homepages.inf.ed.ac.uk/korin/site/home/
+- https://home.ttic.edu/~klivescu/
+
+Corpora
+- https://www.cstr.ed.ac.uk/downloads/
+- http://www.mspkacorpus.it/
+
 ## What do the results tell you?
