@@ -16,7 +16,7 @@ The purpose of this page is to outline the main topics on which I publish my res
 <div>
 <img src="/images/huang2018sequential.png" style="max-width:60%;  text-align:justify;">
 </div>
-<div class="thecap">Figure: Using sequential information to improve the event-level accuracy of sound event detection.
+<div class="thecap">Figure: Typical sound sequences in urban environments.
 </div>
 </div>
 
