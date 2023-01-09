@@ -65,7 +65,7 @@ In particular, LMs including text data generated with RNNLMs improve ASR and KWS
 
 #### An Adaptive Neural Control Scheme For Articulatory Synthesis of CV Sequences
 
-[[pdf]](/papers/2014_CSL/huang2014adaptive.pdf) [[bib]](/papers/2014_CSL/huang2014adaptive.bib) CSL 2014
+[[pdf]](/papers/2014_CSL/huang2014csl.pdf) [[bib]](/papers/2014_CSL/huang2014csl.bib) CSL 2014
 
 **Abstract**  Reproducing the smooth vocal tract trajectories is critical for high quality articulatory speech synthesis. This paper presents an adaptive neural control scheme for such a task using fuzzy logic and neural networks.  The control scheme estimates motor commands from trajectories of flesh-points on selected articulators. These motor commands are then used to reproduce the trajectories of the underlying articulators in a 2nd order dynamical system. Initial experiments show that the control scheme is able to manipulate the mass-spring based elastic tract walls in a 2-dimensional articulatory synthesizer and to realize efficient speech motor control. The proposed controller achieves high accuracy during on-line tracking of the lips, the tongue, and the jaw in the simulation of consonant-vowel sequences. It also offers salient features such as generality and adaptability for future developments of control models in articulatory synthesis.
 
