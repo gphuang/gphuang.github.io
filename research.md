@@ -10,11 +10,11 @@ The purpose of this page is to outline the main topics on which I publish my res
 ## Topics
 
 #### Environmental Sound Events Detection
-[[pdf]](/papers/2018_IWAENC_TUNI/huang2018/sequential.pdf)  [[bib]](/papers/2017_ICASSP_LIMSI/huang2017sequential.bib) IWAENC 2018
+[[pdf]](/papers/2018_IWAENC_TUNI/huang2018sequential.pdf)  [[bib]](/papers/2018_IWAENC_TUNI/huang2017sequential.bib) IWAENC 2018
 
 <div class="imgcap">
 <div>
-<img src="/images/huang2018/sequential.png" style="max-width:60%;  text-align:justify;">
+<img src="/images/huang2018sequential.png" style="max-width:60%;  text-align:justify;">
 </div>
 <div class="thecap">Figure: Using sequential information to improve the event-level accuracy of sound event detection.
 </div>
