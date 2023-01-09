@@ -10,6 +10,19 @@ The purpose of this page is to outline the main topics on which I publish my res
 ## Topics
 
 #### Environmental Sound Events Detection
+[[pdf]](/papers/2018_IWAENC_TUNI/huang2018/sequential.pdf)  [[bib]](/papers/2017_ICASSP_LIMSI/huang2017sequential.bib) ICASSP 2017
+
+<div class="imgcap">
+<div>
+<img src="/images/huang2018/sequential.png" style="max-width:60%;  text-align:justify;">
+</div>
+<div class="thecap">Figure: Using sequential information to improve the event-level accuracy of sound event detection.
+</div>
+</div>
+
+**Abstract** To detect the class, and start and end times of sound events in real world recordings is a challenging task. Current com- puter systems often show relatively high frame-wise accuracy but low event-wise accuracy. In this paper, we attempted to merge the gap by explicitly including sequential information to improve the performance of a state-of-the-art polyphonic sound event detection system. We propose to 1) use delayed predictions of event activities as additional input features that are fed back to the neural network; 2) build N-grams to model the co-occurrence probabilities of different events; 3) use se- quential loss to train neural networks. Our experiments on a corpus of real world recordings show that the N-grams could smooth the spiky output of a state-of-the-art neural network system, and improve both the frame-wise and the event-wise metrics.
+
+---
 
 #### An Investigation into LM Data Augmentation for Low-resourced ASR And KWS
 
