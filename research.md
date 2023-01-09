@@ -10,7 +10,7 @@ The purpose of this page is to outline the main topics on which I publish my res
 ## Topics
 
 #### Environmental Sound Events Detection
-[[pdf]](/papers/2018_IWAENC_TUNI/huang2018/sequential.pdf)  [[bib]](/papers/2017_ICASSP_LIMSI/huang2017sequential.bib) ICASSP 2017
+[[pdf]](/papers/2018_IWAENC_TUNI/huang2018/sequential.pdf)  [[bib]](/papers/2017_ICASSP_LIMSI/huang2017sequential.bib) IWAENC 2018
 
 <div class="imgcap">
 <div>
