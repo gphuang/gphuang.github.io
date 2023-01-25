@@ -108,6 +108,9 @@ permutation views manipulate row/col vectors
 
 <a name='Backpropagation'></a>
 
+## Activation Function
+https://towardsdatascience.com/activation-functions-neural-networks-1cbd9f8d91d6
+
 ## Backpropagation
 
 computing the gradient analytically using the chain rule, i.e. backpropagation.
