@@ -3,9 +3,7 @@ layout: page
 permalink: /about/
 ---
 
-Currently I am a research scientist at SILO.AI, Helsinki. I received my Ph.D. and B.Sc. degree from School of EEE, NTU, Singapore in 2013 and 2008 respectively.
-
-I enjoy working on machine learning problems and developing practical solutions. My work has revolved around the challenges in automatic speech recognition (ASR) and natural language processing (NLP), with a focus on acoustic-phonetics and language modeling. 
+I am a research scientist in Speech Recognition and Natural Language Processing, with a focus on acoustic-phonetics and neural language models. Currently, I am with the Aalto Speech Group in Helsinki, Finland. I enjoy working on machine learning problems and developing practical solutions.
 
 ## Social Media
 
