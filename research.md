@@ -3,9 +3,8 @@ layout: page
 permalink: /research/
 ---
 
-It all started with a project during my final year at University, to design a software system to help student to speak standard English.
-From there it has been an enriching journey in human language technologies, working particularly pronunciation modeling and language modeling.
-The purpose of this page is to outline the main topics on which I publish my research results.
+It has been an enriching journey in human language technologies, working particularly acoustic and language models.
+This page outlines the main research topics and results.
 
 ## Topics
 
@@ -95,7 +94,11 @@ The retrieved articulatory trajectories and the acoustic features are then used 
 
 ## Experiences
 
-**2016 - present** Post-doc: Acoustic Events Analysis
+**2023 - 2020** Post-doc: Multi-Modal Speech (Emotion) Recognition
+
+**2020 - 2023** Research Scientist: Toxic Text Classification with Transformers
+
+**2016 - 2020** Post-doc: Acoustic Events Analysis
 
 **2015 - 2016** Post-doc: Babel - Text Data Augmentation via Statistical Machine Translation and RNNLMs (Cantonese, English)
 
