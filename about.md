@@ -7,7 +7,7 @@ I am a research scientist in Speech Recognition and Natural Language Processing,
 
 ## Social Media
 
-  - [Google Scholar](https://scholar.google.com/citations?user=ppsf-IAAAAAJ&hl=en)
+  - [Scholar](https://scholar.google.com/citations?user=ppsf-IAAAAAJ&hl=en)
 
   - [Linkedin](https://linkedin.com/in/gp-huang-793ba4194/)
 
