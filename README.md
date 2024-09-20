@@ -1,11 +1,11 @@
 # My Blog
 
-Motivations
+Research Topics
 
-  * to analyze speech/sounds with respect to articulatory and auditory cues.
+  * Speech to articulatory and auditory features
 
-  * to imitate the dual-process of human speech production and perception.
+  * Human speech production and perception.
 
-  * to develop intelligent computer systems capable of understanding natural language.
+  * Spoken language understanding
 
 [//]: #  todo: personal page, pdf files.
