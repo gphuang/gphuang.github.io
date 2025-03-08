@@ -2,10 +2,10 @@
 
 Research Topics
 
-  * Speech to articulatory and auditory features
+  * Articulatory and acoustic phonetics
 
-  * Human speech production and perception.
+  * Human speech production and perception
 
-  * Spoken language understanding
+  * Spoken language processing
 
 [//]: #  todo: personal page, pdf files.
