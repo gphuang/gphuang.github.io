@@ -75,9 +75,9 @@ Y: N*C
 
 Y = XW
 
-\frac{\partialY_{i,j}}{\partialX_{i,k}} = W_{k,j}
+\frac{\partial(Y_{i,j})}{\partial(X_{i,k})} = W_{k,j}
 
-\frac{\partialY_{i,:}}{\partialX_{i,:}} = W
+\frac{\partial(Y_{i,:})}{\partial(X_{i,:})} = W
 ```
 
 i.e.
