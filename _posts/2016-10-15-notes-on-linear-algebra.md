@@ -72,27 +72,33 @@ $$
 X: N*D
 W: D*C
 Y: N*C
+$$
 
+$$
 Y = XW
+$$
 
+$$
 \frac{\partialY_{i,j}}{\partialX_{i,k}} = W_{k,j}
+$$
 
+$$
 \frac{\partialY_{i,:}}{\partialX_{i,:}} = W
-
+$$
 i.e.
 
+$$
 \frac{\partial\vec{y}}{\partial\vec{x}} = W
-
 $$
 
 **_Chain rule_**
 
 $$
 \vec{y} = VW\vec{x}
+$$
 
-\frac{d\vec{y_i}}{d\vec{x_j}} = \sum_{k=1}^{M}\frac{d\vec{y_i}}{d\vec{m_k}}\frac{d\vec{m_k}}{d\vec{x_j}}
-
-= \sum_{k=1}^{M}V_{i,k}W_{k,j}
+$$
+\frac{d\vec{y_i}}{d\vec{x_j}} = \sum_{k=1}^{M}\frac{d\vec{y_i}}{d\vec{m_k}}\frac{d\vec{m_k}}{d\vec{x_j}} = \sum_{k=1}^{M}V_{i,k}W_{k,j}
 $$
 
 **_tips_**
