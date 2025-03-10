@@ -42,7 +42,7 @@ More details [here](http://cs231n.stanford.edu/vecDerivs.pdf)
 
 **_Row vectors_**
 
-```math
+```
 \vec{x}: 1*D
 \vec{y} : 1*C
 W: D*C
