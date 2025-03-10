@@ -54,8 +54,9 @@ $$
 
 \frac{\partial \vec{y_3}}{\partial \vec{x_7}} = W_{7,3}
 
+$$
 \frac{\partial \vec{y}}{\partial \vec{x}} = W
-```
+$$
 
 **_3 Dimensional array_**
 
