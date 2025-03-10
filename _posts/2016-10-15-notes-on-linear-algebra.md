@@ -54,8 +54,6 @@ W: D*C
 \frac{\partial\vec{y_3}}{\partial\vec{x_7}} = W_{7,3}
 
 \frac{\partial\vec{y}}{\partial\vec{x}} = W
-
-
 $$
 
 **_3 Dimensional array_**
@@ -66,7 +64,6 @@ $$
 \frac{\partial\vec{y_3}}{\partial\vec{x_2}} = W_{2,3}
 
 \frac{\partial\vec{y_j}}{\partial\vec{x_i}} = W_{i,j}
-
 $$
 
 **_Multiple data points_**
@@ -96,7 +93,6 @@ $$
 \frac{d\vec{y_i}}{d\vec{x_j}} = \sum_{k=1}^{M}\frac{d\vec{y_i}}{d\vec{m_k}}\frac{d\vec{m_k}}{d\vec{x_j}}
 
 = \sum_{k=1}^{M}V_{i,k}W_{k,j}
-
 $$
 
 **_tips_**
