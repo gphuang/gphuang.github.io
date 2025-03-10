@@ -57,11 +57,13 @@ $$
 $$
 
 **_tips_**
+```math
 row x matrix = row\_picture
 matrix x column = col\_picture
 row x column = scalar
-elimination views matrix as stacked rows or cols
-permutation views manipulate row/col vectors
+```
+- elimination views matrix as stacked rows or cols
+- permutation views manipulate row/col vectors
 
 <a name='Backpropagation'></a>
 
