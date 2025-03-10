@@ -49,11 +49,11 @@ W: D*C
 
 \vec{y} = \vec{x}W
 
-\vec(y_3} = \sum_{j=1}^{D}\vec(x_j)W_{j,3}
+\vec{y_3} = \sum_{j=1}^{D}\vec(x_j)W_{j,3}
 
-\frac{\partial\vec{y_3}}{\partial\vec{x_7}} = W_{7,3}
+\frac{\partial \vec{y_3}}{\partial \vec{x_7}} = W_{7,3}
 
-\frac{\partial\vec{y}}{\partial\vec{x}} = W
+\frac{\partial \vec{y}}{\partial \vec{x}} = W
 ```
 
 **_3 Dimensional array_**
