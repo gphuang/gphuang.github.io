@@ -68,21 +68,17 @@ W: D*C
 
 **_Multiple data points_**
 
-$$
+```math
 X: N*D
 W: D*C
 Y: N*C
-$$
 
-$$
 Y = XW
-$$
-$$
+
 \frac{\partialY_{i,j}}{\partialX_{i,k}} = W_{k,j}
-$$
-$$
+
 \frac{\partialY_{i,:}}{\partialX_{i,:}} = W
-$$
+```
 
 i.e.
 
