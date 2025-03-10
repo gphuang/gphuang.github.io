@@ -59,7 +59,7 @@ W: D*C
 **_3 Dimensional array_**
 
 ```math
-\vec{y_3} = \vec{x_1}W_{1,3} + \ved{x_2}W_{2,3} + \cdots + \vec{x_D}W_{D,3}
+\vec{y_3} = \vec{x_1}W_{1,3} + \vec{x_2}W_{2,3} + \cdots + \vec{x_D}W_{D,3}
 
 \frac{\partial\vec{y_3}}{\partial\vec{x_2}} = W_{2,3}
 
