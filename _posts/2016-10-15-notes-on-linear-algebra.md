@@ -190,8 +190,3 @@ dW = dD.dot(X.T)
 dX = W.T.dot(dD)
 
 ```
-
-**_tips_**
-*calculus
-*algebra
-*geometry
