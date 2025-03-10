@@ -46,13 +46,21 @@ $$
 \vec{x}: 1*D
 \vec{y} : 1*C
 W: D*C
+$$
 
+$$
 \vec{y} = \vec{x}W
+$$
 
+$$
 \vec(y_3} = \sum_{j=1}^{D}\vec(x_j)W_{j,3}
+$$
 
+$$
 \frac{\partial\vec{y_3}}{\partial\vec{x_7}} = W_{7,3}
+$$
 
+$$
 \frac{\partial\vec{y}}{\partial\vec{x}} = W
 $$
 
@@ -60,9 +68,13 @@ $$
 
 $$
 \vec{y_3} = \vec{x_1}W_{1,3} + \ved{x_2}W_{2,3} + \cdots + \vec{x_D}W_{D,3}
+$$
 
+$$
 \frac{\partial\vec{y_3}}{\partial\vec{x_2}} = W_{2,3}
+$$
 
+$$
 \frac{\partial\vec{y_j}}{\partial\vec{x_i}} = W_{i,j}
 $$
 
@@ -85,6 +97,7 @@ $$
 $$
 \frac{\partialY_{i,:}}{\partialX_{i,:}} = W
 $$
+
 i.e.
 
 $$
