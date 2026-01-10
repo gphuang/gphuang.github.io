@@ -9,6 +9,6 @@ I am a research scientist in Speech and Language Technology, focusing on acousti
 
   - [Scholar](https://scholar.google.com/citations?user=ppsf-IAAAAAJ&hl=en)
 
-  - [Linkedin](https://www.linkedin.com/in/guangpu-huang-793ba4194/)
+  - [Linkedin](https://www.linkedin.com/in/gp-huang-793ba4194/)
 
   - [Insta](https://instagram.com/gpuhua) 
