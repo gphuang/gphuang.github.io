@@ -3,12 +3,14 @@ layout: page
 permalink: /about/
 ---
 
-I am a research scientist in Speech and Language Technology, focusing on acoustic-phonetics and neural language models. I enjoy working on machine learning problems and developing practical solutions.
+I'm a research scientist working on speech, language, and multimodal
+machine learning. Background in acoustic-phonetics and low-resource
+speech recognition; current interests include self-supervised
+multimodal models and practical evaluation of language technologies.
 
-## Social Media
+PhD from NTU Singapore (2012). Post-doctoral research at LIMSI/CNRS
+(France), Tampere University (Finland), and Aalto University (Finland).
 
-  - [Scholar](https://scholar.google.com/citations?user=ppsf-IAAAAAJ&hl=en)
-
-  - [Linkedin](https://www.linkedin.com/in/gp-huang-793ba4194/)
-
-  - [Insta](https://instagram.com/gpuhua) 
+📚 [Google Scholar](https://scholar.google.com/citations?user=ppsf-IAAAAAJ&hl=en)
+· 💼 [LinkedIn](https://www.linkedin.com/in/gp-huang-793ba4194/)
+· 💻 [GitHub](https://github.com/gphuang)

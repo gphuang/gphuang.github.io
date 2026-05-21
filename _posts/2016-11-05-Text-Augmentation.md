@@ -15,7 +15,6 @@ If HLT is to propagate to any new/old languages, including 女书, Elvish, and K
 
 **Example.** For example, in the image below are some texts extracted from LOTR, written in Elvish with English translations.
 
-INSERT image
 
 **Challenges.** Since collecting millions of words from an under-resourced language is relatively difficult and usually time/labor/money consuming, it is worth considering the challenge from the perspective of an automated text generation algorithm, i.e., using existing text to make more text
 

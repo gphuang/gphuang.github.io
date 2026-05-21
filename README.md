@@ -1,11 +1,20 @@
-# My Blog
+# gphuang.github.io
 
-Research Topics
+Personal website served at <https://gphuang.github.io>.
 
-  * Articulatory and acoustic phonetics
+Built with [Jekyll](https://jekyllrb.com/) and hosted on GitHub Pages.
 
-  * Human speech production and perception
+## Local preview
 
-  * Spoken language processing
+```bash
+bundle install
+bundle exec jekyll serve
+```
 
-[//]: #  todo: personal page, pdf files.
+## Layout
+
+- `about.md` — short bio and contact links
+- `research.md` — selected publications, experience, teaching
+- `_posts/` — blog posts and study notes
+- `papers/` — paper PDFs and BibTeX entries
+- `images/`, `assets/` — figures used by posts and papers
