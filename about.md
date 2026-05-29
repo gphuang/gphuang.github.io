@@ -19,7 +19,6 @@ PhD from NTU Singapore (2013). See [research](/research/) for
 selected papers, or [Google Scholar](https://scholar.google.com/citations?user=ppsf-IAAAAAJ&hl=en)
 for the full list.
 
-📄 [CV (PDF)](/assets/cv/huang_cv.pdf)
-· 📚 [Google Scholar](https://scholar.google.com/citations?user=ppsf-IAAAAAJ&hl=en)
+📚 [Google Scholar](https://scholar.google.com/citations?user=ppsf-IAAAAAJ&hl=en)
 · 💼 [LinkedIn](https://www.linkedin.com/in/gp-huang-793ba4194/)
 · 💻 [GitHub](https://github.com/gphuang)
