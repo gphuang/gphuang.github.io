@@ -103,8 +103,8 @@ With A. Virkkunen, M. Sarvaš, T. Grosz, M. Kurimo (Aalto). Probing what audio-v
 - **2020 – 2023** · Research Scientist — Toxic-text classification with transformer language models
 - **2018 – 2020** · Post-doc, Tampere University — Acoustic event analysis
 - **2015 – 2017** · Post-doc, LIMSI/CNRS — Babel low-resource keyword search and language-model data augmentation
-- **2012 – 2015** · Post-doc, NTU Singapore — Multi-view DNN for sentence-boundary detection and speech segmentation
-- **2008 – 2012** · Ph.D., NTU Singapore — Articulatory phonetic features for automatic speech recognition
+- **2013 – 2015** · Post-doc, NTU Singapore — Multi-view DNN for sentence-boundary detection and speech segmentation
+- **2008 – 2013** · Ph.D., NTU Singapore — Articulatory phonetic features for automatic speech recognition
 - **2004 – 2008** · B.Eng., NTU Singapore
 
 ## Teaching
